@@ -897,4 +897,7 @@ export const SR: Record<string, string> = {
   "Verified": "Provereno",
   "Edited by you": "Izmenili ste",
   "Original approved": "Original odobren",
+  "This subtitle has no Cyrillic text yet. Click \"Adapt\" (top right) to convert all subtitles to Cyrillic, or only this one:": "Ovaj titl još nema tekst ćirilicom. Kliknite „Prilagodi“ (gore desno) da se svi titlovi prebace u ćirilicu, ili samo ovaj:",
+  "This subtitle has no {profile} text yet. Click \"Adapt\" (top right) to copy the original for all subtitles, or only this one:": "Ovaj titl još nema tekst za {profile}. Kliknite „Prilagodi“ (gore desno) da se original prenese za sve titlove, ili samo za ovaj:",
+  "Adapt this subtitle": "Prilagodi ovaj titl",
 }

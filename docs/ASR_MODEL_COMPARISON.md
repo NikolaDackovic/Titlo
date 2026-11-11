@@ -117,3 +117,24 @@ referencom), pa izbor modela za te jezike još nije potvrđen merenjem.
 
 Na osnovu izmerenog (small: ~1,7 GB private za worker), turbo bi verovatno zahtevao više od 2,5 GB i ne bi bio
 stabilan na ovom računaru uz ostale otvorene aplikacije. To je procena, nije izmereno.
+
+## Veći modeli preko whisper.cpp (test van aplikacije, 2026-11-11)
+
+Na zahtev korisnika, posle lošeg Small rezultata na `srp-video.mp4`. **Demonstracija, nema WER-a**: snimak je
+CapCut AI glas na srpskom (89 s), bez proverene reference. Isti zvuk kao u aplikaciji (dekodiran njenim
+dekoderom, 16 kHz mono). whisper.cpp v1.9.5 (build b5454, `whisper-bin-x64.zip`), 4 niti, CPU, jezik `sr`.
+Modeli sa `ggerganov/whisper.cpp` (Hugging Face), SHA-256 proveren:
+`ggml-large-v3-q5_0.bin` `d75795ec…` (1.081 MB), `ggml-large-v3-turbo-q5_0.bin` `39422170…` (574 MB).
+Lokacija: `%LOCALAPPDATA%\ExYuTitlStudio\tools\` i `…\models\whisper.cpp\` (van projekta i OneDrive-a).
+
+| | Small (aplikacija, browser) | large-v3-turbo q5, beam 5 | large-v3-turbo q5, greedy | large-v3 q5, beam 5 |
+|---|---|---|---|---|
+| Vreme za 89 s | 251 s (RTF 2,8) | 510 s (RTF 5,7) | 447 s (RTF 5,0) | 1194 s (RTF 13,4) |
+| Najveća private memorija | ~1,7 GB (worker) | 1,3 GB | 1,25 GB | **2,5 GB, slobodna commit memorija pala na 0** |
+| Primer: „Prvo mu kažete šta radite…“ | „Prvom ukažete šta radete, radno vreme u svog je“ | „Prvo mu kažete šta radite. Radno vreme, usloge, cene“ | isto kao beam 5 | „Prvo mu kažete šta radite. Radno vreme, usloge, cene“ |
+| Primer: „Sedam dana besplatno“ | „7 dano bezpotno“ | „Sedam dana bespotno“ | „Sedam dana bespletno“ | „Sedam dana besplatno“ |
+
+Sva merenja su rađena dok je slobodan fizički RAM bio 83–357 MB (VS Code, Chrome), uz rad preko diska:
+vremena su pesimistična. Zaključak: **large-v3 nije upotrebljiv na ovom računaru** (memorija), a
+**large-v3-turbo jeste**: tekst je blizu large-v3 i mnogo bolji od Small, uz 1,3 GB RAM-a, ali je oko 2× sporiji
+od Small. U aplikaciju još nije ugrađen.

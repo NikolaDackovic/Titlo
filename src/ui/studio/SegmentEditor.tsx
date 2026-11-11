@@ -157,6 +157,19 @@ export function SegmentEditor(props: Props) {
               </div>
               {tr?.error && <span className="hint" style={{ color: 'var(--warn)' }}>{tr.error}</span>}
             </label>
+            {sameLanguage && !text.trim() && !locked && segment.source.trim() && (
+              <div className="callout info adapt-hint">
+                <Languages size={15} />
+                <div className="small grow">
+                  {def.script === 'Cyrl'
+                    ? t('This subtitle has no Cyrillic text yet. Click "Adapt" (top right) to convert all subtitles to Cyrillic, or only this one:')
+                    : t('This subtitle has no {profile} text yet. Click "Adapt" (top right) to copy the original for all subtitles, or only this one:', { profile: t(def.label) })}
+                  <div style={{ marginTop: 6 }}>
+                    <button className="btn sm" onClick={props.onTranslateThis} disabled={busy}>{t('Adapt this subtitle')}</button>
+                  </div>
+                </div>
+              </div>
+            )}
             {stale && (
               <div className="callout warn stale-note">
                 <History size={15} />
