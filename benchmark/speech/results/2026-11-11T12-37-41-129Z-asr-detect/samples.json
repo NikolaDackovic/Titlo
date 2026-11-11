@@ -1,0 +1,3092 @@
+[
+  {
+    "model": "onnx-community/whisper-base",
+    "id": "en-t01-zira-r0",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "synthetic-clean",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 4680,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 18.5,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.9649447971166943,
+        "sh": 0.00006937749929653226,
+        "other": 0.0061144641082434385,
+        "otherCode": "ja"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9649447971166943
+        },
+        {
+          "code": "ja",
+          "probability": 0.0061144641082434385
+        },
+        {
+          "code": "cy",
+          "probability": 0.0034455450606715797
+        },
+        {
+          "code": "de",
+          "probability": 0.002313679604087027
+        },
+        {
+          "code": "ar",
+          "probability": 0.0014402754988424222
+        }
+      ],
+      "noSpeechProb": 0.051495050001278395,
+      "windows": 1,
+      "speechSeconds": 2.4,
+      "status": "detected",
+      "language": "en",
+      "probability": 0.9649447971166943,
+      "variantIsHint": false,
+      "reason": "ok"
+    },
+    "detectMs": 18797,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-base",
+    "id": "en-t01-david-r0",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "synthetic-clean",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 4705,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 14.9,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.9795204661412221,
+        "sh": 0.00003928385793765148,
+        "other": 0.002848534163343184,
+        "otherCode": "cy"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9795204661412221
+        },
+        {
+          "code": "cy",
+          "probability": 0.002848534163343184
+        },
+        {
+          "code": "ja",
+          "probability": 0.0024984832594861445
+        },
+        {
+          "code": "nn",
+          "probability": 0.0013313112901545835
+        },
+        {
+          "code": "de",
+          "probability": 0.0009765175097195182
+        }
+      ],
+      "noSpeechProb": 0.0333121210305896,
+      "windows": 1,
+      "speechSeconds": 2.28,
+      "status": "detected",
+      "language": "en",
+      "probability": 0.9795204661412221,
+      "variantIsHint": false,
+      "reason": "ok"
+    },
+    "detectMs": 14231,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-base",
+    "id": "en-t05-zira-r0",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "synthetic-clean",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 4030,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 16.3,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.9947241739671322,
+        "sh": 0.0000024193163690724813,
+        "other": 0.0022355640563630048,
+        "otherCode": "cy"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9947241739671322
+        },
+        {
+          "code": "cy",
+          "probability": 0.0022355640563630048
+        },
+        {
+          "code": "nn",
+          "probability": 0.000494863444186433
+        },
+        {
+          "code": "ja",
+          "probability": 0.00025529420362140054
+        },
+        {
+          "code": "km",
+          "probability": 0.00020537973265251458
+        }
+      ],
+      "noSpeechProb": 0.012531104064797313,
+      "windows": 1,
+      "speechSeconds": 2.9,
+      "status": "detected",
+      "language": "en",
+      "probability": 0.9947241739671322,
+      "variantIsHint": false,
+      "reason": "ok"
+    },
+    "detectMs": 13461,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-base",
+    "id": "en-t05-david-r0",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "synthetic-clean",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 4075,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 20.5,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.9936082902635408,
+        "sh": 0.0000025477721235444255,
+        "other": 0.0020631566229075225,
+        "otherCode": "cy"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9936082902635408
+        },
+        {
+          "code": "cy",
+          "probability": 0.0020631566229075225
+        },
+        {
+          "code": "nn",
+          "probability": 0.0012514453208101815
+        },
+        {
+          "code": "ja",
+          "probability": 0.0003104106367655926
+        },
+        {
+          "code": "km",
+          "probability": 0.00028414799593971476
+        }
+      ],
+      "noSpeechProb": 0.00943694056513017,
+      "windows": 1,
+      "speechSeconds": 3.02,
+      "status": "detected",
+      "language": "en",
+      "probability": 0.9936082902635408,
+      "variantIsHint": false,
+      "reason": "ok"
+    },
+    "detectMs": 10924,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-base",
+    "id": "en-t08-zira-r0",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "names-terms",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 4240,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 13.7,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.9826339059135039,
+        "sh": 0.000038433433359611924,
+        "other": 0.0034085359002634344,
+        "otherCode": "fr"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9826339059135039
+        },
+        {
+          "code": "fr",
+          "probability": 0.0034085359002634344
+        },
+        {
+          "code": "de",
+          "probability": 0.0016505458198453895
+        },
+        {
+          "code": "ru",
+          "probability": 0.0016477039010094462
+        },
+        {
+          "code": "pt",
+          "probability": 0.001102315352910136
+        }
+      ],
+      "noSpeechProb": 0.03400550755199491,
+      "windows": 1,
+      "speechSeconds": 3.04,
+      "status": "detected",
+      "language": "en",
+      "probability": 0.9826339059135039,
+      "variantIsHint": false,
+      "reason": "ok"
+    },
+    "detectMs": 10887,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-base",
+    "id": "en-t08-david-r0",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "names-terms",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 4230,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 22.3,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.9868237561782588,
+        "sh": 0.00003749642636389697,
+        "other": 0.0015612924751088925,
+        "otherCode": "fr"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9868237561782588
+        },
+        {
+          "code": "fr",
+          "probability": 0.0015612924751088925
+        },
+        {
+          "code": "ru",
+          "probability": 0.001523491222451137
+        },
+        {
+          "code": "de",
+          "probability": 0.0009057654252970746
+        },
+        {
+          "code": "hi",
+          "probability": 0.000777396282267708
+        }
+      ],
+      "noSpeechProb": 0.024699879817623317,
+      "windows": 1,
+      "speechSeconds": 2.98,
+      "status": "detected",
+      "language": "en",
+      "probability": 0.9868237561782588,
+      "variantIsHint": false,
+      "reason": "ok"
+    },
+    "detectMs": 10147,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-base",
+    "id": "en-t12-zira-r0",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "synthetic-clean",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 5335,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 18.4,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.9933883188345916,
+        "sh": 0.00000431713243051828,
+        "other": 0.0011272887089947043,
+        "otherCode": "hi"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9933883188345916
+        },
+        {
+          "code": "hi",
+          "probability": 0.0011272887089947043
+        },
+        {
+          "code": "nn",
+          "probability": 0.0008961972058028159
+        },
+        {
+          "code": "cy",
+          "probability": 0.0008494837718837999
+        },
+        {
+          "code": "ms",
+          "probability": 0.00048522013228648756
+        }
+      ],
+      "noSpeechProb": 0.020196167268828388,
+      "windows": 1,
+      "speechSeconds": 3.98,
+      "status": "detected",
+      "language": "en",
+      "probability": 0.9933883188345916,
+      "variantIsHint": false,
+      "reason": "ok"
+    },
+    "detectMs": 8244,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-base",
+    "id": "en-t12-david-r0",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "synthetic-clean",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 5160,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 23.5,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.9911644114338943,
+        "sh": 0.000006390729232598769,
+        "other": 0.0014679889945476729,
+        "otherCode": "nn"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9911644114338943
+        },
+        {
+          "code": "nn",
+          "probability": 0.0014679889945476729
+        },
+        {
+          "code": "cy",
+          "probability": 0.0009065580240369107
+        },
+        {
+          "code": "ms",
+          "probability": 0.0005355435044904125
+        },
+        {
+          "code": "ko",
+          "probability": 0.0005328276905803379
+        }
+      ],
+      "noSpeechProb": 0.019606186596353468,
+      "windows": 1,
+      "speechSeconds": 3.9,
+      "status": "detected",
+      "language": "en",
+      "probability": 0.9911644114338943,
+      "variantIsHint": false,
+      "reason": "ok"
+    },
+    "detectMs": 6303,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-base",
+    "id": "en-t14-zira-r0",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "very-short",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 1340,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 22.6,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.9248560149419744,
+        "sh": 0.00010232454605942396,
+        "other": 0.007734900136343757,
+        "otherCode": "ja"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9248560149419744
+        },
+        {
+          "code": "ja",
+          "probability": 0.007734900136343757
+        },
+        {
+          "code": "cy",
+          "probability": 0.006619210388668677
+        },
+        {
+          "code": "ko",
+          "probability": 0.005568881032485255
+        },
+        {
+          "code": "de",
+          "probability": 0.005000298490342363
+        }
+      ],
+      "noSpeechProb": 0.07183901567763297,
+      "windows": 1,
+      "speechSeconds": 0.46,
+      "status": "uncertain",
+      "language": "en",
+      "probability": 0.9248560149419744,
+      "variantIsHint": false,
+      "reason": "too-short"
+    },
+    "detectMs": 6144,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-base",
+    "id": "en-t14-david-r0",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "very-short",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 1275,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 23.4,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.9599176699040117,
+        "sh": 0.00006538872061065144,
+        "other": 0.005187976377769514,
+        "otherCode": "cy"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9599176699040117
+        },
+        {
+          "code": "cy",
+          "probability": 0.005187976377769514
+        },
+        {
+          "code": "pt",
+          "probability": 0.004344201792614777
+        },
+        {
+          "code": "pl",
+          "probability": 0.0037315883648431506
+        },
+        {
+          "code": "de",
+          "probability": 0.003653436130308161
+        }
+      ],
+      "noSpeechProb": 0.03758473328985904,
+      "windows": 1,
+      "speechSeconds": 0.38,
+      "status": "uncertain",
+      "language": "en",
+      "probability": 0.9599176699040117,
+      "variantIsHint": false,
+      "reason": "too-short"
+    },
+    "detectMs": 5993,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-base",
+    "id": "en-t01-david-noise10",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "synthetic-noise",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 4705,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 24.7,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.9499338907228676,
+        "sh": 0.00006866927580676758,
+        "other": 0.011142940840484493,
+        "otherCode": "nn"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9499338907228676
+        },
+        {
+          "code": "nn",
+          "probability": 0.011142940840484493
+        },
+        {
+          "code": "la",
+          "probability": 0.003905080787669428
+        },
+        {
+          "code": "ja",
+          "probability": 0.0036550566543752925
+        },
+        {
+          "code": "pt",
+          "probability": 0.003629716476055472
+        }
+      ],
+      "noSpeechProb": 0.06868458092649417,
+      "windows": 1,
+      "speechSeconds": 4.7,
+      "status": "detected",
+      "language": "en",
+      "probability": 0.9499338907228676,
+      "variantIsHint": false,
+      "reason": "ok"
+    },
+    "detectMs": 5147,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-base",
+    "id": "en-t01-david-music6",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "synthetic-music",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 4705,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 19.9,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.9598617054159954,
+        "sh": 0.00008404290497387217,
+        "other": 0.004680990984917987,
+        "otherCode": "nn"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9598617054159954
+        },
+        {
+          "code": "nn",
+          "probability": 0.004680990984917987
+        },
+        {
+          "code": "ja",
+          "probability": 0.0032275327692635166
+        },
+        {
+          "code": "haw",
+          "probability": 0.0024991582851933117
+        },
+        {
+          "code": "km",
+          "probability": 0.0021672287922964075
+        }
+      ],
+      "noSpeechProb": 0.06714387408444439,
+      "windows": 1,
+      "speechSeconds": 4.7,
+      "status": "detected",
+      "language": "en",
+      "probability": 0.9598617054159954,
+      "variantIsHint": false,
+      "reason": "ok"
+    },
+    "detectMs": 7742,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-base",
+    "id": "en-t03-zira-noise10",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "synthetic-noise",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 4670,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 24.3,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.9806538241143595,
+        "sh": 0.00001555263694274093,
+        "other": 0.002249435102248947,
+        "otherCode": "ja"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9806538241143595
+        },
+        {
+          "code": "ja",
+          "probability": 0.002249435102248947
+        },
+        {
+          "code": "el",
+          "probability": 0.0019611353901051068
+        },
+        {
+          "code": "nn",
+          "probability": 0.0013987094520568183
+        },
+        {
+          "code": "cy",
+          "probability": 0.00113985603989812
+        }
+      ],
+      "noSpeechProb": 0.027374977638718677,
+      "windows": 1,
+      "speechSeconds": 4.66,
+      "status": "detected",
+      "language": "en",
+      "probability": 0.9806538241143595,
+      "variantIsHint": false,
+      "reason": "ok"
+    },
+    "detectMs": 5195,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-base",
+    "id": "en-t03-zira-music6",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "synthetic-music",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 4670,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 16.1,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.9947400943451017,
+        "sh": 0.000005425374823046327,
+        "other": 0.0005954630192194302,
+        "otherCode": "nn"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9947400943451017
+        },
+        {
+          "code": "nn",
+          "probability": 0.0005954630192194302
+        },
+        {
+          "code": "ja",
+          "probability": 0.0003439767624191996
+        },
+        {
+          "code": "de",
+          "probability": 0.00032984785660218586
+        },
+        {
+          "code": "cy",
+          "probability": 0.0003225857312710541
+        }
+      ],
+      "noSpeechProb": 0.02046603397891193,
+      "windows": 1,
+      "speechSeconds": 4.66,
+      "status": "detected",
+      "language": "en",
+      "probability": 0.9947400943451017,
+      "variantIsHint": false,
+      "reason": "ok"
+    },
+    "detectMs": 9843,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-base",
+    "id": "en-t05-david-noise10",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "synthetic-noise",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 4075,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 23.7,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.9836125716668968,
+        "sh": 0.000025484069684445248,
+        "other": 0.002720028552485024,
+        "otherCode": "nn"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9836125716668968
+        },
+        {
+          "code": "nn",
+          "probability": 0.002720028552485024
+        },
+        {
+          "code": "ms",
+          "probability": 0.0010758511210108288
+        },
+        {
+          "code": "ja",
+          "probability": 0.0009844753888597522
+        },
+        {
+          "code": "km",
+          "probability": 0.0007587409716598572
+        }
+      ],
+      "noSpeechProb": 0.04209423885189532,
+      "windows": 1,
+      "speechSeconds": 4.06,
+      "status": "detected",
+      "language": "en",
+      "probability": 0.9836125716668968,
+      "variantIsHint": false,
+      "reason": "ok"
+    },
+    "detectMs": 5613,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-base",
+    "id": "en-t05-david-music6",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "synthetic-music",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 4075,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 18.8,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.9968768151912375,
+        "sh": 0.0000030428021524632238,
+        "other": 0.0003549600508842044,
+        "otherCode": "cy"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9968768151912375
+        },
+        {
+          "code": "cy",
+          "probability": 0.0003549600508842044
+        },
+        {
+          "code": "nn",
+          "probability": 0.00025426367714717944
+        },
+        {
+          "code": "fr",
+          "probability": 0.00023307571347418562
+        },
+        {
+          "code": "km",
+          "probability": 0.00016309120669612135
+        }
+      ],
+      "noSpeechProb": 0.011502997491385107,
+      "windows": 1,
+      "speechSeconds": 4.06,
+      "status": "detected",
+      "language": "en",
+      "probability": 0.9968768151912375,
+      "variantIsHint": false,
+      "reason": "ok"
+    },
+    "detectMs": 8572,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-base",
+    "id": "en-t08-zira-noise10",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "synthetic-noise",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 4240,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 23.9,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.9645467630665264,
+        "sh": 0.0001280784024139741,
+        "other": 0.0048590361782461155,
+        "otherCode": "pt"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9645467630665264
+        },
+        {
+          "code": "pt",
+          "probability": 0.0048590361782461155
+        },
+        {
+          "code": "tl",
+          "probability": 0.0026261375991684923
+        },
+        {
+          "code": "la",
+          "probability": 0.0023240365777510655
+        },
+        {
+          "code": "fr",
+          "probability": 0.0021384806207045666
+        }
+      ],
+      "noSpeechProb": 0.04064555049391222,
+      "windows": 1,
+      "speechSeconds": 4.24,
+      "status": "detected",
+      "language": "en",
+      "probability": 0.9645467630665264,
+      "variantIsHint": false,
+      "reason": "ok"
+    },
+    "detectMs": 6116,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-base",
+    "id": "en-t08-zira-music6",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "synthetic-music",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 4240,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 22.2,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.9785733276012648,
+        "sh": 0.00007271154199398562,
+        "other": 0.004549703446727819,
+        "otherCode": "fr"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9785733276012648
+        },
+        {
+          "code": "fr",
+          "probability": 0.004549703446727819
+        },
+        {
+          "code": "ru",
+          "probability": 0.002570160877071646
+        },
+        {
+          "code": "pl",
+          "probability": 0.0018281134947671003
+        },
+        {
+          "code": "ja",
+          "probability": 0.0013533918652273355
+        }
+      ],
+      "noSpeechProb": 0.04289414409733553,
+      "windows": 1,
+      "speechSeconds": 4.24,
+      "status": "detected",
+      "language": "en",
+      "probability": 0.9785733276012648,
+      "variantIsHint": false,
+      "reason": "ok"
+    },
+    "detectMs": 5523,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-base",
+    "id": "en-t10-david-noise10",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "synthetic-noise",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 5860,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 24.6,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.9718095728803174,
+        "sh": 0.000023277719979106096,
+        "other": 0.004653721488862914,
+        "otherCode": "nn"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9718095728803174
+        },
+        {
+          "code": "nn",
+          "probability": 0.004653721488862914
+        },
+        {
+          "code": "la",
+          "probability": 0.0033812564083096834
+        },
+        {
+          "code": "ja",
+          "probability": 0.002053806778967921
+        },
+        {
+          "code": "fr",
+          "probability": 0.001892826104093307
+        }
+      ],
+      "noSpeechProb": 0.05724540425329488,
+      "windows": 1,
+      "speechSeconds": 5.86,
+      "status": "detected",
+      "language": "en",
+      "probability": 0.9718095728803174,
+      "variantIsHint": false,
+      "reason": "ok"
+    },
+    "detectMs": 4598,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-base",
+    "id": "en-t10-david-music6",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "synthetic-music",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 5860,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 24.8,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.9911357150524747,
+        "sh": 0.000008933137992033057,
+        "other": 0.0013771563449087886,
+        "otherCode": "la"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9911357150524747
+        },
+        {
+          "code": "la",
+          "probability": 0.0013771563449087886
+        },
+        {
+          "code": "haw",
+          "probability": 0.0011134220105512044
+        },
+        {
+          "code": "nn",
+          "probability": 0.0009515087643843429
+        },
+        {
+          "code": "ko",
+          "probability": 0.00037739589471115286
+        }
+      ],
+      "noSpeechProb": 0.02280888905428344,
+      "windows": 1,
+      "speechSeconds": 5.86,
+      "status": "detected",
+      "language": "en",
+      "probability": 0.9911357150524747,
+      "variantIsHint": false,
+      "reason": "ok"
+    },
+    "detectMs": 4331,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-base",
+    "id": "en-t12-zira-noise10",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "synthetic-noise",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 5335,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 24.6,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.9775145507965886,
+        "sh": 0.000019342465911053806,
+        "other": 0.0028382311298495435,
+        "otherCode": "la"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9775145507965886
+        },
+        {
+          "code": "la",
+          "probability": 0.0028382311298495435
+        },
+        {
+          "code": "ja",
+          "probability": 0.0019352323034251661
+        },
+        {
+          "code": "pt",
+          "probability": 0.001843252747491444
+        },
+        {
+          "code": "nn",
+          "probability": 0.001815633041955489
+        }
+      ],
+      "noSpeechProb": 0.0490192891813786,
+      "windows": 1,
+      "speechSeconds": 5.32,
+      "status": "detected",
+      "language": "en",
+      "probability": 0.9775145507965886,
+      "variantIsHint": false,
+      "reason": "ok"
+    },
+    "detectMs": 4346,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-base",
+    "id": "en-t12-zira-music6",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "synthetic-music",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 5335,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 24.9,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.9929883527996415,
+        "sh": 0.000004554150292039155,
+        "other": 0.0017746968595293688,
+        "otherCode": "nn"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9929883527996415
+        },
+        {
+          "code": "nn",
+          "probability": 0.0017746968595293688
+        },
+        {
+          "code": "la",
+          "probability": 0.0006259309919800476
+        },
+        {
+          "code": "cy",
+          "probability": 0.0005692528653905685
+        },
+        {
+          "code": "hi",
+          "probability": 0.00048122641121490915
+        }
+      ],
+      "noSpeechProb": 0.029124880652118306,
+      "windows": 1,
+      "speechSeconds": 5.32,
+      "status": "detected",
+      "language": "en",
+      "probability": 0.9929883527996415,
+      "variantIsHint": false,
+      "reason": "ok"
+    },
+    "detectMs": 4536,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-base",
+    "id": "ctl-silence-10s",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": null,
+    "category": "no-speech",
+    "evaluation": "detection-only",
+    "expectedLanguage": "no-speech",
+    "audioMs": 10000,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 13.2,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "status": "no-speech",
+      "language": null,
+      "probability": 0,
+      "variantIsHint": false,
+      "groups": {
+        "en": 0,
+        "sh": 0,
+        "other": 0,
+        "otherCode": null
+      },
+      "candidates": [],
+      "noSpeechProb": 1,
+      "windows": 0,
+      "speechSeconds": 0,
+      "reason": "silence"
+    },
+    "detectMs": 135,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-base",
+    "id": "ctl-noise-10s",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": null,
+    "category": "no-speech",
+    "evaluation": "detection-only",
+    "expectedLanguage": "no-speech",
+    "audioMs": 10000,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 25,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "status": "no-speech",
+      "language": null,
+      "probability": 0,
+      "variantIsHint": false,
+      "groups": {
+        "en": 0.15216898376225804,
+        "sh": 0.0001505611071692094,
+        "other": 0.46419609241836357,
+        "otherCode": "nn"
+      },
+      "candidates": [
+        {
+          "code": "nn",
+          "probability": 0.46419609241836357
+        },
+        {
+          "code": "en",
+          "probability": 0.15216898376225804
+        },
+        {
+          "code": "ja",
+          "probability": 0.12488307786432586
+        },
+        {
+          "code": "ko",
+          "probability": 0.05119114416865035
+        },
+        {
+          "code": "ru",
+          "probability": 0.03425665446919259
+        }
+      ],
+      "noSpeechProb": 0.8748615292190247,
+      "windows": 1,
+      "speechSeconds": 10,
+      "reason": "model-no-speech"
+    },
+    "detectMs": 4132,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-base",
+    "id": "ctl-music-10s",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": null,
+    "category": "no-speech",
+    "evaluation": "detection-only",
+    "expectedLanguage": "no-speech",
+    "audioMs": 10000,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 24.7,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "status": "no-speech",
+      "language": null,
+      "probability": 0,
+      "variantIsHint": false,
+      "groups": {
+        "en": 0.3333250213700633,
+        "sh": 0.0006273561644855565,
+        "other": 0.12027151233831232,
+        "otherCode": "pt"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.3333250213700633
+        },
+        {
+          "code": "pt",
+          "probability": 0.12027151233831232
+        },
+        {
+          "code": "si",
+          "probability": 0.07406279423036885
+        },
+        {
+          "code": "ro",
+          "probability": 0.06182951556616418
+        },
+        {
+          "code": "nn",
+          "probability": 0.049254468577709036
+        }
+      ],
+      "noSpeechProb": 0.8668867521019524,
+      "windows": 1,
+      "speechSeconds": 10,
+      "reason": "model-no-speech"
+    },
+    "detectMs": 4469,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-base",
+    "id": "demo-eng-video",
+    "dataset": "local-demo@1.0.0",
+    "language": "en",
+    "category": "user-demo",
+    "evaluation": "demo",
+    "expectedLanguage": "en",
+    "audioMs": 0,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 23,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.9961218019502951,
+        "sh": 0.0000014053594600735403,
+        "other": 0.0007360968756961578,
+        "otherCode": "ja"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9961218019502951
+        },
+        {
+          "code": "ja",
+          "probability": 0.0007360968756961578
+        },
+        {
+          "code": "zh",
+          "probability": 0.0003555107205649153
+        },
+        {
+          "code": "fr",
+          "probability": 0.00031235864626436737
+        },
+        {
+          "code": "th",
+          "probability": 0.0002548758121372997
+        }
+      ],
+      "noSpeechProb": 0.12518863081872186,
+      "windows": 3,
+      "speechSeconds": 75.52,
+      "status": "detected",
+      "language": "en",
+      "probability": 0.9961218019502951,
+      "variantIsHint": false,
+      "reason": "ok"
+    },
+    "detectMs": 19882,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-base",
+    "id": "demo-srp-video",
+    "dataset": "local-demo@1.0.0",
+    "language": "sr",
+    "category": "user-demo",
+    "evaluation": "demo",
+    "expectedLanguage": "sr",
+    "audioMs": 0,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 23.4,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.0020865874171211835,
+        "sh": 0.672608012774623,
+        "other": 0.12881693826486434,
+        "otherCode": "sq"
+      },
+      "candidates": [
+        {
+          "code": "hr",
+          "probability": 0.45937481607268954
+        },
+        {
+          "code": "bs",
+          "probability": 0.15147642250694848
+        },
+        {
+          "code": "sq",
+          "probability": 0.12881693826486434
+        },
+        {
+          "code": "sl",
+          "probability": 0.12237785452713162
+        },
+        {
+          "code": "sr",
+          "probability": 0.06175677419498504
+        }
+      ],
+      "noSpeechProb": 0.041195338384824726,
+      "windows": 3,
+      "speechSeconds": 72.18,
+      "status": "detected",
+      "language": "hr",
+      "probability": 0.672608012774623,
+      "variantIsHint": true,
+      "reason": "ok"
+    },
+    "detectMs": 15141,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-small",
+    "id": "en-t01-zira-r0",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "synthetic-clean",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 4680,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 23.7,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.9962323026049021,
+        "sh": 0.0000013821805851238335,
+        "other": 0.0018975728453937554,
+        "otherCode": "cy"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9962323026049021
+        },
+        {
+          "code": "cy",
+          "probability": 0.0018975728453937554
+        },
+        {
+          "code": "ja",
+          "probability": 0.0005236796321511124
+        },
+        {
+          "code": "nn",
+          "probability": 0.000384747670994857
+        },
+        {
+          "code": "km",
+          "probability": 0.000091354735329812
+        }
+      ],
+      "noSpeechProb": 0.004722875279648663,
+      "windows": 1,
+      "speechSeconds": 2.4,
+      "status": "detected",
+      "language": "en",
+      "probability": 0.9962323026049021,
+      "variantIsHint": false,
+      "reason": "ok"
+    },
+    "detectMs": 18366,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-small",
+    "id": "en-t01-david-r0",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "synthetic-clean",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 4705,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 23.4,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.9981808171557957,
+        "sh": 4.971274062197163e-7,
+        "other": 0.0008945761332650708,
+        "otherCode": "cy"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9981808171557957
+        },
+        {
+          "code": "cy",
+          "probability": 0.0008945761332650708
+        },
+        {
+          "code": "ja",
+          "probability": 0.0002163198519150319
+        },
+        {
+          "code": "nn",
+          "probability": 0.00010045676062165025
+        },
+        {
+          "code": "zh",
+          "probability": 0.0000601216632420393
+        }
+      ],
+      "noSpeechProb": 0.002241855543572955,
+      "windows": 1,
+      "speechSeconds": 2.28,
+      "status": "detected",
+      "language": "en",
+      "probability": 0.9981808171557957,
+      "variantIsHint": false,
+      "reason": "ok"
+    },
+    "detectMs": 20234,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-small",
+    "id": "en-t05-zira-r0",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "synthetic-clean",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 4030,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 23.2,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.9981825313022328,
+        "sh": 2.5585299985143797e-7,
+        "other": 0.0013690307970335158,
+        "otherCode": "cy"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9981825313022328
+        },
+        {
+          "code": "cy",
+          "probability": 0.0013690307970335158
+        },
+        {
+          "code": "nn",
+          "probability": 0.00011293147150195083
+        },
+        {
+          "code": "ja",
+          "probability": 0.00009826039351962425
+        },
+        {
+          "code": "zh",
+          "probability": 0.00003776609901937221
+        }
+      ],
+      "noSpeechProb": 0.0013404137147239063,
+      "windows": 1,
+      "speechSeconds": 2.9,
+      "status": "detected",
+      "language": "en",
+      "probability": 0.9981825313022328,
+      "variantIsHint": false,
+      "reason": "ok"
+    },
+    "detectMs": 25310,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-small",
+    "id": "en-t05-david-r0",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "synthetic-clean",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 4075,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 23.8,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.9985334982468048,
+        "sh": 1.555687473168363e-7,
+        "other": 0.0011513964453792249,
+        "otherCode": "cy"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9985334982468048
+        },
+        {
+          "code": "cy",
+          "probability": 0.0011513964453792249
+        },
+        {
+          "code": "nn",
+          "probability": 0.000088125639260259
+        },
+        {
+          "code": "ja",
+          "probability": 0.00005005107132520068
+        },
+        {
+          "code": "km",
+          "probability": 0.0000282547290853898
+        }
+      ],
+      "noSpeechProb": 0.0008620744745142022,
+      "windows": 1,
+      "speechSeconds": 3.02,
+      "status": "detected",
+      "language": "en",
+      "probability": 0.9985334982468048,
+      "variantIsHint": false,
+      "reason": "ok"
+    },
+    "detectMs": 18698,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-small",
+    "id": "en-t08-zira-r0",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "names-terms",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 4240,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 24.6,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.9909275537270537,
+        "sh": 0.00006226465302138454,
+        "other": 0.002562361396894768,
+        "otherCode": "cy"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9909275537270537
+        },
+        {
+          "code": "cy",
+          "probability": 0.002562361396894768
+        },
+        {
+          "code": "tr",
+          "probability": 0.001922604241039588
+        },
+        {
+          "code": "ar",
+          "probability": 0.0007409401961190018
+        },
+        {
+          "code": "pl",
+          "probability": 0.0004599382740296648
+        }
+      ],
+      "noSpeechProb": 0.01153512492969516,
+      "windows": 1,
+      "speechSeconds": 3.04,
+      "status": "detected",
+      "language": "en",
+      "probability": 0.9909275537270537,
+      "variantIsHint": false,
+      "reason": "ok"
+    },
+    "detectMs": 16377,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-small",
+    "id": "en-t08-david-r0",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "names-terms",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 4230,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 24.6,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.9929937669611141,
+        "sh": 0.000023842992226080124,
+        "other": 0.001887584088421037,
+        "otherCode": "tr"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9929937669611141
+        },
+        {
+          "code": "tr",
+          "probability": 0.001887584088421037
+        },
+        {
+          "code": "cy",
+          "probability": 0.0018659382582495384
+        },
+        {
+          "code": "ar",
+          "probability": 0.0005753633800713414
+        },
+        {
+          "code": "pl",
+          "probability": 0.0004073056160289493
+        }
+      ],
+      "noSpeechProb": 0.00958273074057454,
+      "windows": 1,
+      "speechSeconds": 2.98,
+      "status": "detected",
+      "language": "en",
+      "probability": 0.9929937669611141,
+      "variantIsHint": false,
+      "reason": "ok"
+    },
+    "detectMs": 17274,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-small",
+    "id": "en-t12-zira-r0",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "synthetic-clean",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 5335,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 24.1,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.9960776862285053,
+        "sh": 9.413872494300302e-7,
+        "other": 0.0023815228213601887,
+        "otherCode": "cy"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9960776862285053
+        },
+        {
+          "code": "cy",
+          "probability": 0.0023815228213601887
+        },
+        {
+          "code": "ja",
+          "probability": 0.00027810326562299645
+        },
+        {
+          "code": "nn",
+          "probability": 0.00026688977220977965
+        },
+        {
+          "code": "la",
+          "probability": 0.00019184705809737208
+        }
+      ],
+      "noSpeechProb": 0.004123708403442795,
+      "windows": 1,
+      "speechSeconds": 3.98,
+      "status": "detected",
+      "language": "en",
+      "probability": 0.9960776862285053,
+      "variantIsHint": false,
+      "reason": "ok"
+    },
+    "detectMs": 18192,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-small",
+    "id": "en-t12-david-r0",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "synthetic-clean",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 5160,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 25,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.9983344734108304,
+        "sh": 3.781582370011299e-7,
+        "other": 0.0010431275553944089,
+        "otherCode": "cy"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9983344734108304
+        },
+        {
+          "code": "cy",
+          "probability": 0.0010431275553944089
+        },
+        {
+          "code": "ja",
+          "probability": 0.00013877164946076692
+        },
+        {
+          "code": "nn",
+          "probability": 0.00011870402123840457
+        },
+        {
+          "code": "zh",
+          "probability": 0.00005242291610369494
+        }
+      ],
+      "noSpeechProb": 0.001557571851549972,
+      "windows": 1,
+      "speechSeconds": 3.9,
+      "status": "detected",
+      "language": "en",
+      "probability": 0.9983344734108304,
+      "variantIsHint": false,
+      "reason": "ok"
+    },
+    "detectMs": 21054,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-small",
+    "id": "en-t14-zira-r0",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "very-short",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 1340,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 24.3,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.9797368962572853,
+        "sh": 0.000020366719799938584,
+        "other": 0.008622226867284496,
+        "otherCode": "cy"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9797368962572853
+        },
+        {
+          "code": "cy",
+          "probability": 0.008622226867284496
+        },
+        {
+          "code": "ja",
+          "probability": 0.0046647848214180715
+        },
+        {
+          "code": "nn",
+          "probability": 0.0006402452361537794
+        },
+        {
+          "code": "pl",
+          "probability": 0.0006293100821365073
+        }
+      ],
+      "noSpeechProb": 0.02012219354069057,
+      "windows": 1,
+      "speechSeconds": 0.46,
+      "status": "uncertain",
+      "language": "en",
+      "probability": 0.9797368962572853,
+      "variantIsHint": false,
+      "reason": "too-short"
+    },
+    "detectMs": 18171,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-small",
+    "id": "en-t14-david-r0",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "very-short",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 1275,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 25.1,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.9609451637589942,
+        "sh": 0.000016298574033753767,
+        "other": 0.02786652761648581,
+        "otherCode": "cy"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9609451637589942
+        },
+        {
+          "code": "cy",
+          "probability": 0.02786652761648581
+        },
+        {
+          "code": "nn",
+          "probability": 0.0019993664804368446
+        },
+        {
+          "code": "zh",
+          "probability": 0.001242782915886077
+        },
+        {
+          "code": "ru",
+          "probability": 0.0011713608780874664
+        }
+      ],
+      "noSpeechProb": 0.013641468759311322,
+      "windows": 1,
+      "speechSeconds": 0.38,
+      "status": "uncertain",
+      "language": "en",
+      "probability": 0.9609451637589942,
+      "variantIsHint": false,
+      "reason": "too-short"
+    },
+    "detectMs": 15864,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-small",
+    "id": "en-t01-david-noise10",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "synthetic-noise",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 4705,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 23.7,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.9921930743361703,
+        "sh": 0.000002505077975505162,
+        "other": 0.002174374734949812,
+        "otherCode": "nn"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9921930743361703
+        },
+        {
+          "code": "nn",
+          "probability": 0.002174374734949812
+        },
+        {
+          "code": "ja",
+          "probability": 0.0017529204556222748
+        },
+        {
+          "code": "cy",
+          "probability": 0.0007647141239182728
+        },
+        {
+          "code": "haw",
+          "probability": 0.0004204113180968471
+        }
+      ],
+      "noSpeechProb": 0.00947320624473776,
+      "windows": 1,
+      "speechSeconds": 4.7,
+      "status": "detected",
+      "language": "en",
+      "probability": 0.9921930743361703,
+      "variantIsHint": false,
+      "reason": "ok"
+    },
+    "detectMs": 16421,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-small",
+    "id": "en-t01-david-music6",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "synthetic-music",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 4705,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 24.8,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.9972882222830217,
+        "sh": 9.266216037535038e-7,
+        "other": 0.0006792737153085164,
+        "otherCode": "ja"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9972882222830217
+        },
+        {
+          "code": "ja",
+          "probability": 0.0006792737153085164
+        },
+        {
+          "code": "cy",
+          "probability": 0.0003881000294647797
+        },
+        {
+          "code": "nn",
+          "probability": 0.00028648923176581326
+        },
+        {
+          "code": "haw",
+          "probability": 0.0002617125720795382
+        }
+      ],
+      "noSpeechProb": 0.003153524482977031,
+      "windows": 1,
+      "speechSeconds": 4.7,
+      "status": "detected",
+      "language": "en",
+      "probability": 0.9972882222830217,
+      "variantIsHint": false,
+      "reason": "ok"
+    },
+    "detectMs": 14884,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-small",
+    "id": "en-t03-zira-noise10",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "synthetic-noise",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 4670,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 24.7,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.9938335499622184,
+        "sh": 0.000001627297177015828,
+        "other": 0.0016084693950133282,
+        "otherCode": "ja"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9938335499622184
+        },
+        {
+          "code": "ja",
+          "probability": 0.0016084693950133282
+        },
+        {
+          "code": "nn",
+          "probability": 0.0016053431668913874
+        },
+        {
+          "code": "cy",
+          "probability": 0.0013998099918135995
+        },
+        {
+          "code": "ms",
+          "probability": 0.00014760503339662957
+        }
+      ],
+      "noSpeechProb": 0.004768754963424785,
+      "windows": 1,
+      "speechSeconds": 4.66,
+      "status": "detected",
+      "language": "en",
+      "probability": 0.9938335499622184,
+      "variantIsHint": false,
+      "reason": "ok"
+    },
+    "detectMs": 16225,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-small",
+    "id": "en-t03-zira-music6",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "synthetic-music",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 4670,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 25.4,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.9970707313856648,
+        "sh": 3.500155475734086e-7,
+        "other": 0.0015937436566088362,
+        "otherCode": "cy"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9970707313856648
+        },
+        {
+          "code": "cy",
+          "probability": 0.0015937436566088362
+        },
+        {
+          "code": "ja",
+          "probability": 0.00035722751977699293
+        },
+        {
+          "code": "nn",
+          "probability": 0.00029118325154266894
+        },
+        {
+          "code": "es",
+          "probability": 0.00006958670166997167
+        }
+      ],
+      "noSpeechProb": 0.0045274773791686715,
+      "windows": 1,
+      "speechSeconds": 4.66,
+      "status": "detected",
+      "language": "en",
+      "probability": 0.9970707313856648,
+      "variantIsHint": false,
+      "reason": "ok"
+    },
+    "detectMs": 15443,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-small",
+    "id": "en-t05-david-noise10",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "synthetic-noise",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 4075,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 24.9,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.9979820489497088,
+        "sh": 5.099847416305796e-7,
+        "other": 0.0005815608915084977,
+        "otherCode": "cy"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9979820489497088
+        },
+        {
+          "code": "cy",
+          "probability": 0.0005815608915084977
+        },
+        {
+          "code": "nn",
+          "probability": 0.000538597094992212
+        },
+        {
+          "code": "ja",
+          "probability": 0.0004324770381063536
+        },
+        {
+          "code": "fr",
+          "probability": 0.00005772462103158721
+        }
+      ],
+      "noSpeechProb": 0.0021303175804687196,
+      "windows": 1,
+      "speechSeconds": 4.06,
+      "status": "detected",
+      "language": "en",
+      "probability": 0.9979820489497088,
+      "variantIsHint": false,
+      "reason": "ok"
+    },
+    "detectMs": 14776,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-small",
+    "id": "en-t05-david-music6",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "synthetic-music",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 4075,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 24.7,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.9990304498359143,
+        "sh": 2.843676818201083e-7,
+        "other": 0.000461776040151357,
+        "otherCode": "cy"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9990304498359143
+        },
+        {
+          "code": "cy",
+          "probability": 0.000461776040151357
+        },
+        {
+          "code": "ja",
+          "probability": 0.00014030260500510678
+        },
+        {
+          "code": "nn",
+          "probability": 0.00011032576394429755
+        },
+        {
+          "code": "km",
+          "probability": 0.0000246289813585006
+        }
+      ],
+      "noSpeechProb": 0.0015531408162545249,
+      "windows": 1,
+      "speechSeconds": 4.06,
+      "status": "detected",
+      "language": "en",
+      "probability": 0.9990304498359143,
+      "variantIsHint": false,
+      "reason": "ok"
+    },
+    "detectMs": 16503,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-small",
+    "id": "en-t08-zira-noise10",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "synthetic-noise",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 4240,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 24.9,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.966432625536999,
+        "sh": 0.00015585644249843032,
+        "other": 0.005512330639266327,
+        "otherCode": "ru"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.966432625536999
+        },
+        {
+          "code": "ru",
+          "probability": 0.005512330639266327
+        },
+        {
+          "code": "nn",
+          "probability": 0.0038757542115546366
+        },
+        {
+          "code": "pl",
+          "probability": 0.0037145017530863587
+        },
+        {
+          "code": "ar",
+          "probability": 0.0027384630552562857
+        }
+      ],
+      "noSpeechProb": 0.02631491317954396,
+      "windows": 1,
+      "speechSeconds": 4.24,
+      "status": "detected",
+      "language": "en",
+      "probability": 0.966432625536999,
+      "variantIsHint": false,
+      "reason": "ok"
+    },
+    "detectMs": 14545,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-small",
+    "id": "en-t08-zira-music6",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "synthetic-music",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 4240,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 24.8,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.9879835102190386,
+        "sh": 0.00004935094336754345,
+        "other": 0.0019774881540525163,
+        "otherCode": "ru"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9879835102190386
+        },
+        {
+          "code": "ru",
+          "probability": 0.0019774881540525163
+        },
+        {
+          "code": "tr",
+          "probability": 0.00184133117866707
+        },
+        {
+          "code": "ar",
+          "probability": 0.0016850627228115775
+        },
+        {
+          "code": "cy",
+          "probability": 0.00146497993284173
+        }
+      ],
+      "noSpeechProb": 0.023166936361238406,
+      "windows": 1,
+      "speechSeconds": 4.24,
+      "status": "detected",
+      "language": "en",
+      "probability": 0.9879835102190386,
+      "variantIsHint": false,
+      "reason": "ok"
+    },
+    "detectMs": 15753,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-small",
+    "id": "en-t10-david-noise10",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "synthetic-noise",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 5860,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 24.6,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.9938221193211748,
+        "sh": 0.000002533048665863446,
+        "other": 0.0015780417838741467,
+        "otherCode": "nn"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9938221193211748
+        },
+        {
+          "code": "nn",
+          "probability": 0.0015780417838741467
+        },
+        {
+          "code": "ja",
+          "probability": 0.001424511209568139
+        },
+        {
+          "code": "cy",
+          "probability": 0.0006161234504676158
+        },
+        {
+          "code": "id",
+          "probability": 0.00029987337393420373
+        }
+      ],
+      "noSpeechProb": 0.011050878391890907,
+      "windows": 1,
+      "speechSeconds": 5.86,
+      "status": "detected",
+      "language": "en",
+      "probability": 0.9938221193211748,
+      "variantIsHint": false,
+      "reason": "ok"
+    },
+    "detectMs": 15921,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-small",
+    "id": "en-t10-david-music6",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "synthetic-music",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 5860,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 23.8,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.9980060125835618,
+        "sh": 9.028845903727718e-7,
+        "other": 0.0005403809455332241,
+        "otherCode": "cy"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9980060125835618
+        },
+        {
+          "code": "cy",
+          "probability": 0.0005403809455332241
+        },
+        {
+          "code": "ja",
+          "probability": 0.0003491204955335405
+        },
+        {
+          "code": "nn",
+          "probability": 0.00015693441275590426
+        },
+        {
+          "code": "es",
+          "probability": 0.00010353261941840743
+        }
+      ],
+      "noSpeechProb": 0.008046041080637854,
+      "windows": 1,
+      "speechSeconds": 5.86,
+      "status": "detected",
+      "language": "en",
+      "probability": 0.9980060125835618,
+      "variantIsHint": false,
+      "reason": "ok"
+    },
+    "detectMs": 18196,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-small",
+    "id": "en-t12-zira-noise10",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "synthetic-noise",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 5335,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 25.5,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.9860508929287415,
+        "sh": 0.000007146528267641591,
+        "other": 0.0035382711641734755,
+        "otherCode": "ja"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9860508929287415
+        },
+        {
+          "code": "ja",
+          "probability": 0.0035382711641734755
+        },
+        {
+          "code": "nn",
+          "probability": 0.0034865993264555865
+        },
+        {
+          "code": "la",
+          "probability": 0.0012378190364257574
+        },
+        {
+          "code": "cy",
+          "probability": 0.0011665999379196787
+        }
+      ],
+      "noSpeechProb": 0.012767172077320602,
+      "windows": 1,
+      "speechSeconds": 5.32,
+      "status": "detected",
+      "language": "en",
+      "probability": 0.9860508929287415,
+      "variantIsHint": false,
+      "reason": "ok"
+    },
+    "detectMs": 15567,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-small",
+    "id": "en-t12-zira-music6",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "synthetic-music",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 5335,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 24.8,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.9960120837839695,
+        "sh": 0.000001260375742073362,
+        "other": 0.0012872578685876128,
+        "otherCode": "cy"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9960120837839695
+        },
+        {
+          "code": "cy",
+          "probability": 0.0012872578685876128
+        },
+        {
+          "code": "ja",
+          "probability": 0.000522236395952581
+        },
+        {
+          "code": "nn",
+          "probability": 0.0004502242507714198
+        },
+        {
+          "code": "la",
+          "probability": 0.00032617822324741664
+        }
+      ],
+      "noSpeechProb": 0.007876494485786445,
+      "windows": 1,
+      "speechSeconds": 5.32,
+      "status": "detected",
+      "language": "en",
+      "probability": 0.9960120837839695,
+      "variantIsHint": false,
+      "reason": "ok"
+    },
+    "detectMs": 15584,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-small",
+    "id": "ctl-silence-10s",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": null,
+    "category": "no-speech",
+    "evaluation": "detection-only",
+    "expectedLanguage": "no-speech",
+    "audioMs": 10000,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 9.5,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "status": "no-speech",
+      "language": null,
+      "probability": 0,
+      "variantIsHint": false,
+      "groups": {
+        "en": 0,
+        "sh": 0,
+        "other": 0,
+        "otherCode": null
+      },
+      "candidates": [],
+      "noSpeechProb": 1,
+      "windows": 0,
+      "speechSeconds": 0,
+      "reason": "silence"
+    },
+    "detectMs": 182,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-small",
+    "id": "ctl-noise-10s",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": null,
+    "category": "no-speech",
+    "evaluation": "detection-only",
+    "expectedLanguage": "no-speech",
+    "audioMs": 10000,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 23.8,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "status": "no-speech",
+      "language": null,
+      "probability": 0,
+      "variantIsHint": false,
+      "groups": {
+        "en": 0.14114880437488492,
+        "sh": 0.00015794699157293708,
+        "other": 0.6382241648847758,
+        "otherCode": "nn"
+      },
+      "candidates": [
+        {
+          "code": "nn",
+          "probability": 0.6382241648847758
+        },
+        {
+          "code": "en",
+          "probability": 0.14114880437488492
+        },
+        {
+          "code": "ja",
+          "probability": 0.05209736633027166
+        },
+        {
+          "code": "ko",
+          "probability": 0.024795679025142937
+        },
+        {
+          "code": "fr",
+          "probability": 0.024606284151522138
+        }
+      ],
+      "noSpeechProb": 0.7671439906350083,
+      "windows": 1,
+      "speechSeconds": 10,
+      "reason": "model-no-speech"
+    },
+    "detectMs": 20898,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-small",
+    "id": "ctl-music-10s",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": null,
+    "category": "no-speech",
+    "evaluation": "detection-only",
+    "expectedLanguage": "no-speech",
+    "audioMs": 10000,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 24.3,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "status": "no-speech",
+      "language": null,
+      "probability": 0,
+      "variantIsHint": false,
+      "groups": {
+        "en": 0.5455566034666002,
+        "sh": 0.0014283114102142552,
+        "other": 0.08191426417243083,
+        "otherCode": "nn"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.5455566034666002
+        },
+        {
+          "code": "nn",
+          "probability": 0.08191426417243083
+        },
+        {
+          "code": "fr",
+          "probability": 0.031505887906771675
+        },
+        {
+          "code": "ja",
+          "probability": 0.028078280396025435
+        },
+        {
+          "code": "jw",
+          "probability": 0.027134996532249732
+        }
+      ],
+      "noSpeechProb": 0.8136218505435507,
+      "windows": 1,
+      "speechSeconds": 10,
+      "reason": "model-no-speech"
+    },
+    "detectMs": 15182,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-small",
+    "id": "demo-eng-video",
+    "dataset": "local-demo@1.0.0",
+    "language": "en",
+    "category": "user-demo",
+    "evaluation": "demo",
+    "expectedLanguage": "en",
+    "audioMs": 0,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 24.1,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.9969139092013863,
+        "sh": 2.24523555655736e-7,
+        "other": 0.0007894302975283842,
+        "otherCode": "ja"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9969139092013863
+        },
+        {
+          "code": "ja",
+          "probability": 0.0007894302975283842
+        },
+        {
+          "code": "zh",
+          "probability": 0.00040940037075861996
+        },
+        {
+          "code": "th",
+          "probability": 0.0002399792879752022
+        },
+        {
+          "code": "cy",
+          "probability": 0.00019243788947237705
+        }
+      ],
+      "noSpeechProb": 0.09858150082830046,
+      "windows": 3,
+      "speechSeconds": 75.52,
+      "status": "detected",
+      "language": "en",
+      "probability": 0.9969139092013863,
+      "variantIsHint": false,
+      "reason": "ok"
+    },
+    "detectMs": 49401,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-small",
+    "id": "demo-srp-video",
+    "dataset": "local-demo@1.0.0",
+    "language": "sr",
+    "category": "user-demo",
+    "evaluation": "demo",
+    "expectedLanguage": "sr",
+    "audioMs": 0,
+    "transcribeMs": null,
+    "rtf": null,
+    "cpuPercent": 23.2,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.009627945179350974,
+        "sh": 0.8799608491685857,
+        "other": 0.08580297478549818,
+        "otherCode": "sl"
+      },
+      "candidates": [
+        {
+          "code": "hr",
+          "probability": 0.5600707249618644
+        },
+        {
+          "code": "bs",
+          "probability": 0.232077109433414
+        },
+        {
+          "code": "sr",
+          "probability": 0.08781301477330733
+        },
+        {
+          "code": "sl",
+          "probability": 0.08580297478549818
+        },
+        {
+          "code": "en",
+          "probability": 0.009627945179350974
+        }
+      ],
+      "noSpeechProb": 0.07514516230089067,
+      "windows": 3,
+      "speechSeconds": 72.18,
+      "status": "detected",
+      "language": "hr",
+      "probability": 0.8799608491685857,
+      "variantIsHint": true,
+      "reason": "ok"
+    },
+    "detectMs": 56350,
+    "detectionError": null
+  }
+]

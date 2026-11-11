@@ -1,0 +1,39 @@
+{
+  "name": "local-demo",
+  "version": "1.0.0",
+  "createdAt": "2026-11-11T12:13:56.069Z",
+  "description": "User recordings on this computer (absolute paths). No reference transcripts: demonstration only, never a WER/CER result.",
+  "generator": {},
+  "samples": [
+    {
+      "id": "demo-eng-video",
+      "language": "en",
+      "category": "user-demo",
+      "audio": "C:/Users/38169/Downloads/eng-video.mp4",
+      "durationMs": 0,
+      "sha256": "f068e9d1aab5b3f550533e3d67083f44992b8e0c0b1c3a890d4f3cf557e9f240",
+      "reference": null,
+      "referenceStatus": "none",
+      "evaluation": "demo",
+      "expectedLanguage": "en",
+      "source": "User-provided recording (CapCut voice). Language label given by the user.",
+      "license": "User-provided, used with permission for local testing only. Not redistributed.",
+      "qualityNote": "No reference transcript: output is shown, WER/CER cannot be computed."
+    },
+    {
+      "id": "demo-srp-video",
+      "language": "sr",
+      "category": "user-demo",
+      "audio": "C:/Users/38169/Downloads/srp-video.mp4",
+      "durationMs": 0,
+      "sha256": "5e86d341ac0c1f76897d791aebe8882d43e02ec08588487e0f8a945d0b6a00b9",
+      "reference": null,
+      "referenceStatus": "none",
+      "evaluation": "demo",
+      "expectedLanguage": "sr",
+      "source": "User-provided recording (CapCut voice). Language label given by the user.",
+      "license": "User-provided, used with permission for local testing only. Not redistributed.",
+      "qualityNote": "No reference transcript: output is shown, WER/CER cannot be computed."
+    }
+  ]
+}

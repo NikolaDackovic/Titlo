@@ -1,0 +1,5 @@
+model,id,expected,status,reason,language,probability,p_en,p_sr_hr_bs,p_other,other_code,no_speech_prob,speech_seconds,windows,detect_ms,correct,error
+onnx-community/whisper-base,demo-eng-video,en,detected,ok,en,0.9961,0.9961,0,0.0007,ja,0.1252,75.5,3,,true,
+onnx-community/whisper-base,demo-srp-video,sr,detected,ok,hr,0.6726,0.0021,0.6726,0.1288,sq,0.0412,72.2,3,,true,
+onnx-community/whisper-small,demo-eng-video,en,detected,ok,en,0.9969,0.9969,0,0.0008,ja,0.0986,75.5,3,,true,
+onnx-community/whisper-small,demo-srp-video,sr,detected,ok,hr,0.88,0.0096,0.88,0.0858,sl,0.0751,72.2,3,,true,

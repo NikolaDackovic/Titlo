@@ -1,0 +1,6 @@
+﻿id,category,source,reference,candidate_output,steps,chrF,auto_flags,accuracy_1_5,naturalness_1_5,grammar_1_5,tone_1_5,slang_idioms_1_5,subtitle_suitability_1_5,regional_naturalness_1_5,critical_error_yes_no,notes
+EVD-01,everyday,Where did you put my keys?,Gdje si stavio moje ključeve?,Gdje si mi ostavio ključeve?,model,60.5,,,,,,,,,,
+EVD-02,everyday,I'll call you when I get home.,Javit ću ti se kad stignem kući.,Zvaću te kad dođem kući.,model,32.2,,,,,,,,,,
+EVD-03,everyday,Do you want some coffee?,Hoćeš li kafu?,Hoćeš li kafu?,model,100,,,,,,,,,,
+EVD-04,everyday,The train leaves at seven.,Voz polazi u sedam.,Voz polazi u sedam.,model,100,,,,,,,,,,
+EVD-05,everyday,We need bread and milk.,Treba nam hljeb i mlijeko.,Treba nam hleb i mleko.,model,59.9,wrong-yat,,,,,,,,,

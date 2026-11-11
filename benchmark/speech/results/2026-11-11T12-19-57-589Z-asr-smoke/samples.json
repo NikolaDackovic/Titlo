@@ -1,0 +1,161 @@
+[
+  {
+    "model": "onnx-community/whisper-base",
+    "id": "en-t01-david-r0",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "synthetic-clean",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 4705,
+    "transcribeMs": 14620,
+    "rtf": 3.107,
+    "cpuPercent": 19.8,
+    "hypothesis": "Hello, I am your AI assistant. Welcome aboard.",
+    "segments": 2,
+    "usedLanguage": "en",
+    "error": null,
+    "score": {
+      "strict": {
+        "wer": {
+          "n": 8,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0,
+          "hits": 8,
+          "rate": 0
+        },
+        "cer": {
+          "n": 46,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0,
+          "hits": 46,
+          "rate": 0
+        }
+      },
+      "normalized": {
+        "wer": {
+          "n": 8,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0,
+          "hits": 8,
+          "rate": 0
+        },
+        "cer": {
+          "n": 43,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0,
+          "hits": 43,
+          "rate": 0
+        }
+      },
+      "diacriticOnlyErrors": 0,
+      "scriptDiffers": false,
+      "errors": []
+    },
+    "detection": null,
+    "detectMs": 18294,
+    "detectionError": "Error: Cannot read properties of undefined (reading 'tokens_to_ids')"
+  },
+  {
+    "model": "onnx-community/whisper-base",
+    "id": "en-t14-zira-r0",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "very-short",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 1340,
+    "transcribeMs": 9968,
+    "rtf": 7.439,
+    "cpuPercent": 21.4,
+    "hypothesis": "Yes.",
+    "segments": 1,
+    "usedLanguage": "en",
+    "error": null,
+    "score": {
+      "strict": {
+        "wer": {
+          "n": 1,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0,
+          "hits": 1,
+          "rate": 0
+        },
+        "cer": {
+          "n": 4,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0,
+          "hits": 4,
+          "rate": 0
+        }
+      },
+      "normalized": {
+        "wer": {
+          "n": 1,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0,
+          "hits": 1,
+          "rate": 0
+        },
+        "cer": {
+          "n": 3,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0,
+          "hits": 3,
+          "rate": 0
+        }
+      },
+      "diacriticOnlyErrors": 0,
+      "scriptDiffers": false,
+      "errors": []
+    },
+    "detection": null,
+    "detectMs": 10268,
+    "detectionError": "Error: Cannot read properties of undefined (reading 'tokens_to_ids')"
+  },
+  {
+    "model": "onnx-community/whisper-base",
+    "id": "ctl-silence-10s",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": null,
+    "category": "no-speech",
+    "evaluation": "detection-only",
+    "expectedLanguage": "no-speech",
+    "audioMs": 10000,
+    "transcribeMs": 6812,
+    "rtf": 0.681,
+    "cpuPercent": 23.5,
+    "hypothesis": "you",
+    "segments": 1,
+    "usedLanguage": "en",
+    "error": null,
+    "score": null,
+    "detection": {
+      "status": "no-speech",
+      "language": null,
+      "probability": 0,
+      "variantIsHint": false,
+      "groups": {
+        "en": 0,
+        "sh": 0,
+        "other": 0,
+        "otherCode": null
+      },
+      "candidates": [],
+      "noSpeechProb": 1,
+      "windows": 0,
+      "speechSeconds": 0,
+      "reason": "silence"
+    },
+    "detectMs": 75,
+    "detectionError": null
+  }
+]

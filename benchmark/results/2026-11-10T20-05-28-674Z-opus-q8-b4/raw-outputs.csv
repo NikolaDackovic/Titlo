@@ -1,0 +1,116 @@
+﻿id,category,source,>>hrv<<,>>bos_Latn<<,>>srp_Latn<<,>>srp_Cyrl<<
+EVD-01,everyday,Where did you put my keys?,Gdje si mi ostavio ključeve?,Gdje si mi ostavio ključeve?,Gde si mi ostavio kljuèeve?,Где си ставио моје кључеве?
+EVD-02,everyday,I'll call you when I get home.,Nazvat ću te kad dođem kući.,Zvaću te kad dođem kući.,Zvaæu te kad doðem kuæi.,Зваћу те кад дођем кући.
+EVD-03,everyday,Do you want some coffee?,Hoćeš kavu?,Hoćeš li kafu?,Hoæeš kafu?,Хоћеш кафу?
+EVD-04,everyday,The train leaves at seven.,Vlak kreće u sedam.,Voz polazi u sedam.,Voz polazi u sedam.,Воз креће у 7.
+EVD-05,everyday,We need bread and milk.,Trebamo kruh i mlijeko.,Treba nam hleb i mleko.,Treba nam hleb i mleko.,Треба нам хлеб и млеко.
+EVD-06,everyday,What time is it?,Koliko je sati?,Koliko je sati?,Koliko je sati?,Колико је сати?
+EVD-07,everyday,"I'm sorry, I'm late.","Žao mi je, kasnim.","Žao mi je, kasnim.","Žao mi je, kasnim.","Жао ми је, касним."
+EVD-08,everyday,Who is at the door?,Tko je na vratima?,Ko je na vratima?,Ko je na vratima?,Ко је на вратима?
+EVD-09,everyday,See you next week.,Vidimo se sljedeći tjedan.,Vidimo se sledeće nedelje.,Vidimo se sledeæe nedelje.,Видимо се следеће недеље.
+EVD-10,everyday,Can you help me with this?,Možeš li mi pomoći s ovim?,Možeš li mi pomoći s ovim?,Možeš li mi pomoæi sa ovim?,Можеш ли ми помоћи са овим?
+HUM-01,humor,"I'm not lazy, I'm in energy-saving mode.","Nisam lijen, u načinu sam štednje energije.","Nisam lijen, u stanju sam spašavanja energije.","Nisam lenj, u stanju sam da štedim energiju.","Нисам лења, ја сам у режиму уштеде енергије."
+HUM-02,humor,My diet starts tomorrow. It always does.,Moja dijeta počinje sutra. Uvijek se dogodi.,Moja dijeta počinje sutra. Uvijek se dogodi.,Moja dijeta poèinje sutra. Uvek se desi.,Моја дијета почиње сутра. Увек се деси.
+HUM-03,humor,I told my dog a joke. He didn't laugh either.,Ispričao sam psu vic. Nije se ni smijao.,Ispričao sam psu vic. Nije se ni smejao.,Isprièao sam psu vic. Nije se ni smejao.,Испричао сам псу шалу. Ни он се није смејао.
+HUM-04,humor,"Of course I can cook. Toast counts, right?","Naravno da znam kuhati. Tost se računa, zar ne?","Naravno da znam kuhati. Tost se računa, zar ne?","Naravno da znam da kuvam. Tost se raèuna, zar ne?","Наравно да могу да кувам. Тост се рачуна, зар не?"
+HUM-05,humor,"If you need me, I'll be asleep.","Ako me trebaš, spavat ću.","Ako me trebaš, spavat ću.","Ako me trebaš, spavat æu.","Ако ти требам, спаваћу."
+HUM-06,humor,I'm on a seafood diet. I see food and I eat it.,Na dijeti sam. Vidim hranu i jedem je.,Na dijeti sam. Vidim hranu i jedem je.,Na dijeti sam. Vidim hranu i jedem je.,Ја сам на дијети морских плодова. Видим храну и једем је.
+HUM-07,humor,This meeting could have been an email.,Ovaj sastanak je mogao biti e-mail.,Ovaj sastanak je mogao biti email.,Ovaj sastanak je mogao biti e-mail.,Овај састанак је могао бити е пошта.
+HUM-08,humor,"Don't worry, I'm a professional. Mostly.","Ne brini, ja sam profesionalac. Uglavnom.","Ne brini, ja sam profesionalac. Uglavnom.","Ne brini, ja sam profesionalac. Uglavnom.","Не брини, ја сам професионалац. Углавном."
+HUM-09,humor,"I'm not arguing, I'm just explaining why I'm right.","Ne raspravljam se, samo objašnjavam zašto sam u pravu.","Ne raspravljam se, samo objašnjavam zašto sam u pravu.","Ne raspravljam se, samo objašnjavam zašto sam u pravu.","Не расправљам се, само објашњавам зашто сам у праву."
+HUM-10,humor,My plants are dead again. I think they're doing it on purpose.,Moje biljke su opet mrtve. Mislim da to namjerno rade.,Moje biljke su opet mrtve. Mislim da to rade namjerno.,Moje biljke su opet mrtve. Mislim da to rade namerno.,Моје биљке су опет мртве. Мислим да то раде намерно.
+SAR-01,sarcasm,"Oh great, another Monday.","Oh super, još jedan ponedjeljak.","Oh super, još jedan ponedjeljak.","Oh, super, još jedan ponedeljak.","Ох супер, још један понедељак."
+SAR-02,sarcasm,"Wow, you're early. Only two hours late.",Uranio si. Kasniš samo dva sata.,Poranio si. Kasniš samo dva sata.,Uranio si. Kasniš samo dva sata.,"Вау, поранио си. Само два сата касним."
+SAR-03,sarcasm,"Sure, because that worked so well last time.","Naravno, jer je to prošlo tako dobro.","Naravno, jer je to prošlo dobro.","Naravno, jer je to prošlo tako dobro.","Наравно, јер је то успело тако добро последњи пут."
+SAR-04,sarcasm,"Thanks for the help. Really, I couldn't have failed without you.","Hvala na pomoći. Stvarno, ne bih uspio bez tebe.","Hvala na pomoći. Ne. Stvarno, ne bih uspio bez tebe.","Hvala na pomoæi. Stvarno, ne bih uspeo bez tebe.","Хвала на помоћи. Не! Стварно, не бих могао да пропаднем без тебе."
+SAR-05,sarcasm,What a surprise. The printer is broken again.,Kakvo iznenađenje. Tiskar je opet pokvaren.,Kakvo iznenađenje. Štampač je opet pokvaren.,Kakvo iznenaðenje. Štampaè je opet pokvaren.,Какво изненађење. Штампач је поново сломљен.
+SAR-06,sarcasm,"Yeah, I'd love to work this weekend.","Da, volio bih raditi ovaj vikend.","Da, volio bih raditi ovaj vikend.","Da, volela bih da radim ovog vikenda.","Да, волео бих да радим овог викенда."
+SAR-07,sarcasm,Nice parking. Did you do it blindfolded?,Lijepo parkiranje. Jesi li to učinio zavezanih očiju?,Lijepo parkiranje. Jesi li to uradio zavezanih očiju?,Lepo parkiranje. Jesi li to uradio zavezanih oèiju?,Лепо паркирање. Јеси ли то урадио завезаних очију?
+SAR-08,sarcasm,Brilliant plan. What could possibly go wrong?,Sjajan plan. Što bi moglo poći po zlu?,Sjajan plan. Šta bi moglo poći po zlu?,Sjajan plan. Šta bi moglo da krene naopako?,Бриљантни план. Шта би могло да пође по злу?
+SAR-09,sarcasm,"Oh, sure. Take your time. It's not like we're in a hurry.",Naravno. Ne žurite. Nije da žurimo.,Naravno. Ne žurite. Nije da žurimo.,"Oh, naravno. Ne žurite. Nije da žurimo.",Наравно. Не жури. Није да журимо.
+SAR-10,sarcasm,Great job. You broke it in record time.,Odličan posao. Razbio si ga u rekordnom vremenu.,Odlično. Razbio si ga u rekordnom vremenu.,Odlièan posao. Razbio si ga u rekordnom vremenu.,Одличан посао. Срушио си га у рекордном времену.
+EMO-01,emotional,I've missed you so much.,Tako si mi nedostajala.,Tako si mi nedostajala.,Mnogo si mi nedostajala.,Много си ми недостајао.
+EMO-02,emotional,Will you marry me?,Hoćeš li se udati za mene?,Hoćeš li se udati za mene?,Hoæeš li se udati za mene?,Хоћеш ли се удати за мене?
+EMO-03,emotional,I can't stop thinking about you.,Ne mogu prestati misliti na tebe.,Ne mogu prestati misliti na tebe.,Ne mogu prestati misliti na tebe.,Не могу престати да мислим на тебе.
+EMO-04,emotional,You look beautiful tonight.,Izgledaš predivno večeras.,Izgledaš predivno večeras.,Izgledaš prelepo veèeras.,Изгледаш дивно вечерас.
+EMO-05,emotional,Stay with me.,Ostani sa mnom.,Ostani sa mnom.,Ostani sa mnom.,Остани са мном.
+EMO-06,emotional,I love you more than anything.,Volim te više od svega.,Volim te više od svega.,Volim te više od svega.,Волим те више од свега.
+EMO-07,emotional,Our first date was a disaster.,Naš prvi spoj je bio katastrofa.,Naš prvi sastanak je bio katastrofa.,Naš prvi sastanak je bio katastrofa.,Наш први састанак је био катастрофа.
+EMO-08,emotional,Kiss me before I change my mind.,Poljubi me prije nego se predomislim.,Poljubi me prije nego se predomislim.,Poljubi me pre nego što se predomislim.,Пољуби ме пре него што се предомислим.
+EMO-09,emotional,I don't want to lose you.,Ne želim te izgubiti.,Ne želim te izgubiti.,Ne želim da te izgubim.,Не желим да те изгубим.
+EMO-10,emotional,Why didn't you tell me you were leaving?,Zašto mi nisi rekao da odlaziš?,Zašto mi nisi rekao da odlaziš?,Zašto mi nisi rekao da odlaziš?,Зашто ми ниси рекао да одлазиш?
+ACT-01,action,Get down! Now!,Dolje! Odmah!,Dole! Odmah!,Dole! Odmah!,Доле! Сада!
+ACT-02,action,"Cover me, I'm going in.","Pokrivaj me, ulazim.","Pokrivaj me, ulazim.","Pokrivaj me, ulazim.","Покривај ме, идем унутра."
+ACT-03,action,They're right behind us!,Iza nas su!,Iza nas su!,Iza nas su!,Они су одмах иза нас!
+ACT-04,action,Drop the gun!,Baci pištolj!,Baci pištolj!,Baci pištolj!,Баци пиштољ!
+ACT-05,action,We have to get out of here before it blows.,Moramo otići odavde prije nego što eksplodira.,Moramo otići odavde prije nego što eksplodira.,Moramo da odemo odavde pre nego što eksplodira.,Морамо да одемо одавде пре него што експлодира.
+ACT-06,action,The helicopter lands in five minutes.,Helikopter slijeće za pet minuta.,Helikopter slijeće za pet minuta.,Helikopter sleæe za pet minuta.,Хеликоптер слеће за пет минута.
+ACT-07,action,Hold on tight!,Drži se čvrsto!,Drži se čvrsto!,Drži se èvrsto!,Држи се чврсто!
+ACT-08,action,Call for backup!,Zovi pojačanje!,Zovi pojačanje!,Zovi pojaèanje!,Позови појачање!
+ACT-09,action,The bomb is under the train.,Bomba je ispod vlaka.,Bomba je ispod voza.,Bomba je ispod voza.,Бомба је испод воза.
+ACT-10,action,Run! Don't look back!,Trči! Ne osvrći se!,Trči! Ne okreći se!,Trèi! Ne okreæi se!,Бежи! Не осврћи се!
+SLG-01,slang,That party was lit.,Ta zabava je bila prava.,Ta zabava je bila prava.,Ta zabava je bila prava.,Та забава је била лепа.
+SLG-02,slang,"Chill, bro.","Smiri se, brate.","Smiri se, brate.","Smiri se, brate.","Опусти се, брате."
+SLG-03,slang,He totally ghosted me.,Totalno me je ulovio.,Totalno me je ulovio.,Totalno me je ulovio.,Потпуно ме је зачарао.
+SLG-04,slang,That's so cringe.,To je tako crvenkasto.,To je tako zanosno.,To je tako zanosno.,То је тако цринге.
+SLG-05,slang,I'm broke until payday.,Švorc sam do isplate.,Švorc sam do isplate.,Švorc sam do isplate.,Ја сам шворц до плате.
+SLG-06,slang,"No way, dude!","Nema šanse, čovječe!","Nema šanse, čovječe!","Nema šanse, èoveèe!","Нема шансе, човече!"
+SLG-07,slang,She's got serious skills.,Ima ozbiljne vještine.,Ima ozbiljne vještine.,Ima ozbiljne veštine.,Она је добила озбиљне вештине.
+SLG-08,slang,Let's grab a bite.,Idemo nešto pojesti.,Idemo nešto pojesti.,Idemo nešto pojesti.,Хајде да загриземо.
+SLG-09,slang,"Come on, it's not a big deal.","Ma daj, nije to ništa.","Ma daj, nije to ništa.","Ma daj, nije to ništa.","Хајде, није то ништа."
+SLG-10,slang,You kidding me?,Šališ se?,Zezaš me?,Zezaš me?,Шалиш се?
+IDI-01,idiom,It's raining cats and dogs.,"Pada kiša, mačke i psi.","Pada kiša, mačke i psi.","Pada kiša, maèke i psi.",Пада киша мачака и паса.
+IDI-02,idiom,Break a leg!,Slomi nogu!,Slomi nogu!,Slomi nogu!,Сломи ногу!
+IDI-03,idiom,Let's call it a day.,Završimo za danas.,Završimo za danas.,Završimo za danas.,Хајде да завршимо за данас.
+IDI-04,idiom,That's a piece of cake.,To je lako.,To je lako.,To je lako.,То је торба.
+IDI-05,idiom,Don't beat around the bush.,Ne okolišaj.,Ne okolišaj.,Ne okolišaj.,Не лупајте по жбуну.
+IDI-06,idiom,He spilled the beans.,Prosuo je grah.,Prosuo je grah.,Prosuo je grah.,Просуо је пасуљ.
+IDI-07,idiom,We're in the same boat.,U istom smo čamcu.,U istom smo čamcu.,U istom smo èamcu.,У истом смо броду.
+IDI-08,idiom,Better late than never.,Bolje ikad nego nikad.,Bolje ikad nego nikad.,Bolje ikad nego nikad.,Боље касно него никад.
+IDI-09,idiom,It costs an arm and a leg.,Košta ruku i nogu.,Košta ruku i nogu.,Košta ruku i nogu.,Кошта руку и ногу.
+IDI-10,idiom,Speak of the devil.,Govoreći o vragu.,Kad smo već kod đavola.,Kad smo veæ kod ðavola.,Говоримо о ђаволу.
+AMB-01,ambiguity,I saw her duck.,Vidio sam joj patku.,Vidio sam joj patku.,Videla sam njenu patku.,Видео сам њену патку.
+AMB-02,ambiguity,They're cooking apples.,Kuhaju jabuke.,Kuvaju jabuke.,Kuvaju jabuke.,Кувају јабуке.
+AMB-03,ambiguity,The bank is closed.,Banka je zatvorena.,Banka je zatvorena.,Banka je zatvorena.,Банка је затворена.
+AMB-04,ambiguity,Can you hold this?,Možeš li pridržati ovo?,Možeš li pridržati ovo?,Možeš li da pridržiš ovo?,Можеш ли да придржиш ово?
+AMB-05,ambiguity,I'll meet you at the station.,Naći ćemo se u stanici.,Naći ćemo se u stanici.,Naæi æemo se u stanici.,Наћи ћемо се у станици.
+AMB-06,ambiguity,She left the room.,Napustila je sobu.,Napustila je sobu.,Napustila je sobu.,Напустила је собу.
+AMB-07,ambiguity,Fair enough.,Pošteno.,Pošteno.,Pošteno.,Поштено.
+AMB-08,ambiguity,Watch out for the fall.,Pazi na pad.,Pazi na pad.,Pazi na pad.,Пази на пад.
+AMB-09,ambiguity,I didn't say she stole the money.,Nisam rekao da je ukrala novac.,Nisam rekao da je ukrala novac.,Nisam rekao da je ukrala novac.,Нисам рекао да је украла новац.
+AMB-10,ambiguity,Leave it.,Ostavi to.,Ostavi to.,Ostavi to.,Остави то.
+LNG-01,long,"If we don't leave right now, we'll miss the last train, and I'm not sleeping at the station again.","Ako odmah ne krenemo, propustit ćemo posljednji vlak, a ja neću spavati na stanici.","Ako odmah ne krenemo, propustićemo poslednji voz, i neću više spavati na stanici.","Ako odmah ne krenemo, propustiæemo poslednji voz, i neæu više da spavam na stanici.","Ако одмах не одемо, пропустићемо последњи воз, а ја нећу опет спавати на станици."
+LNG-02,long,"I know you think I'm wrong, but I've been doing this job for twenty years and I've never seen anything like it.","Znam da misliš da griješim, ali radim ovaj posao već 20 godina i nikad nisam vidio ništa slično.","Znam da misliš da griješim, ali radim ovaj posao već 20 godina i nikad nisam vidio ništa slično.","Znam da misliš da grešim, ali radim ovaj posao veæ 20 godina i nikad nisam video ništa slièno.","Знам да мислиш да грешим, али радим овај посао већ двадесет година и никада нисам видео ништа слично."
+LNG-03,long,"When I was a kid, my grandmother used to make bread every Sunday, and the whole house smelled wonderful.","Kad sam bio dijete, moja baka je svake nedjelje pravila kruh, a cijela kuća je divno mirisala.","Kad sam bio klinac, moja baka je pravila hleb svake nedelje, i cela kuća je divno mirisala.","Kad sam bio klinac, moja baka je pravila hleb svake nedelje, i cela kuæa je divno mirisala.","Кад сам био дете, баба је сваке недеље правила хлеб, а цела кућа је дивно мирисала."
+LNG-04,long,"The police found the car three days later, abandoned near the border, with the engine still warm.","Policija je pronašla auto tri dana kasnije, napušten blizu granice, s motorom koji je još uvijek topao.","Policija je pronašla auto tri dana kasnije, napušten blizu granice, sa još toplim motorom.","Policija je pronašla auto tri dana kasnije, napušten blizu granice, sa još toplim motorom.","Полиција је аутомобил нашла три дана касније, напуштена близу границе, са мотором који је још увек топло."
+LNG-05,long,"Listen to me carefully: whatever happens tonight, you don't open that door for anyone.","Slušaj me pažljivo: što god se večeras dogodi, ne otvaraj ta vrata nikome.","Slušaj me pažljivo: šta god da se desi večeras, ne otvaraj ta vrata nikome.","Slušaj me pažljivo: šta god da se desi veèeras, ne otvaraj ta vrata nikome.","Слушај ме пажљиво: шта год да се вечерас деси, не отварај никоме та врата."
+LNG-06,long,"We spent the whole summer on the island, swimming, fishing and doing absolutely nothing.","Cijelo ljeto smo proveli na otoku, plivajući, pecajući i ne radeći apsolutno ništa.","Proveli smo cijelo ljeto na otoku, plivali, pecali i ne radili apsolutno ništa.","Proveli smo celo leto na ostrvu, plivali, pecali i ne radili apsolutno ništa.","Цело лето смо провели на острву, пливајући, риболовајући и не чинећи ништа."
+LNG-07,long,"I've been trying to call you all morning, but your phone was off, so I drove here because I thought something had happened to you.","Zovem te cijelo jutro, ali telefon ti je bio isključen, pa sam se dovezao ovamo jer sam mislio da ti se nešto dogodilo.","Pokušavam te nazvati cijelo jutro, ali telefon ti je bio isključen, pa sam se dovezao ovamo jer sam mislio da ti se nešto dogodilo.","Pokušavam da te zovem celo jutro, ali telefon ti je bio iskljuèen, pa sam se dovezao ovde jer sam mislio da ti se nešto desilo.","Покушавам да те зовем цело јутро, али телефон ти је био искључен, па сам се довезао овде јер сам мислио да ти се нешто десило."
+LNG-08,long,"If you had told me the truth from the beginning, none of this would have happened.","Da si mi rekao istinu od početka, ništa od ovoga se ne bi dogodilo.","Da si mi rekao istinu od početka, ništa od ovoga se ne bi dogodilo.","Da si mi rekao istinu od poèetka, ništa od ovoga se ne bi desilo.","Да си ми од почетка говорио истину, ништа од овога се не би десило."
+LNG-09,long,"The man who sold us the car, the one with the beard, called again and said he wants it back.","Čovjek koji nam je prodao auto, onaj s bradom, je opet zvao i rekao da ga želi natrag.","Čovjek koji nam je prodao auto, onaj s bradom, je opet zvao i rekao da ga želi natrag.","Èovek koji nam je prodao auto, onaj sa bradom, je ponovo zvao i rekao da želi da ga vratimo.","Човек који нам је продао кола, онај са брадом, позвао је поново и рекао да га жели назад."
+LNG-10,long,"Before you say anything, I know I messed up, and I'm not asking you to forgive me, I just need you to listen.","Prije nego što išta kažeš, znam da sam zabrljao, i ne tražim da mi oprostiš, samo me trebaš saslušati.","Prije nego išta kažeš, znam da sam zabrljao, i ne tražim da mi oprostiš, samo me trebaš saslušati.","Pre nego što kažeš bilo šta, znam da sam zabrljao, i ne tražim da mi oprostiš, samo moraš da me saslušaš.","Пре него што нешто кажеш, знам да сам забрљао, и не тражим од тебе да ми опростиш, само треба да ме слушаш."
+FLM-01,film-dialogue,"- Where were you last night?
+- Out.","- Gdje si bio sinoć?
+- Van.","- Gdje si bio sinoć?
+- Napolje.","- Gde si bio sinoæ?
+- Napolje.","- Где си био синоћ?
+- Од."
+FLM-02,film-dialogue,"Wait, wait, wait. Back up. You did what?","Čekaj, čekaj, čekaj. Natrag. Što si učinio?","Čekaj, čekaj, čekaj. Nazad. Šta si uradio?","Èekaj, èekaj, èekaj. Nazad. Šta si uradio?","Чекај, чекај, чекај. Одмакни се. Шта си урадио? Шта?"
+FLM-03,film-dialogue,I'm not going anywhere until you tell me what's going on.,Ne idem nigdje dok mi ne kažeš što se događa.,Ne idem nigdje dok mi ne kažeš šta se dešava.,Ne idem nigde dok mi ne kažeš šta se dešava.,Не идем нигде док ми не кажеш шта се дешава.
+FLM-04,film-dialogue,"- Is he dead?
+- Not yet.","- Je li mrtav?
+- Ne još.","- Je li mrtav?
+- Ne još.","- Je li mrtav?
+- Ne još.","- Је ли мртав?
+- Не још."
+FLM-05,film-dialogue,Don't you dare hang up on me!,Ne spuštaj mi slušalicu!,Ne spuštaj mi slušalicu!,Ne spuštaj mi slušalicu!,Не буди усуђен да ми прекинеш!
+FLM-06,film-dialogue,We need to talk. Not here.,Moramo razgovarati. Ne ovdje.,Moramo razgovarati. Ne ovdje.,Moramo da razgovaramo. Ne ovde.,Морамо да разговарамо. Не овде.
+FLM-07,film-dialogue,You can't just show up after ten years and act like nothing happened.,Ne možeš se pojaviti nakon 10 godina i ponašati se kao da se ništa nije dogodilo.,Ne možeš se pojaviti nakon 10 godina i ponašati se kao da se ništa nije dogodilo.,Ne možeš se pojaviti nakon 10 godina i ponašati se kao da se ništa nije dogodilo.,Не можеш се појавити после десет година и понашати се као да се ништа није десило.
+FLM-08,film-dialogue,"I was gonna tell you, I swear, I just... I didn't know how.","Htio sam ti reći, kunem se, samo sam... Nisam znao kako.","Htio sam ti reći, kunem se, samo sam... Nisam znao kako.","Hteo sam da ti kažem, kunem se, samo sam... Nisam znao kako.","Хтео сам да ти кажем, кунем се, само сам... Нисам знао како."
+FLM-09,film-dialogue,Get in the car. Now. I'll explain later.,Ulazi u auto. Odmah. Objasnit ću ti kasnije.,Ulazi u auto. Odmah. Objasniću ti kasnije.,Ulazi u auto. Odmah. Objasniæu ti kasnije.,Улази у ауто. Сада. Објаснићу ти касније.
+FLM-10,film-dialogue,"- Did you lock the door?
+- I thought you did.","- Jesi li zaključao vrata?
+- Mislio sam da jesi.","- Jesi li zaključao vrata?
+- Mislio sam da jesi.","- Jesi li zakljuèao vrata?
+- Mislio sam da jesi.","- Јеси ли закључао врата?
+- Мислио сам да јеси."

@@ -1,0 +1,109 @@
+{
+  "kind": "real-model-smoke-test",
+  "date": "2026-11-10T19:55:15.334Z",
+  "machine": {
+    "os": "Windows_NT 10.0.19045",
+    "cpu": "AMD Ryzen 3 3200U with Radeon Vega Mobile Gfx  ",
+    "threads": 4,
+    "ramGb": 3.4,
+    "freeRamGbAtEnd": 0.35
+  },
+  "versions": {
+    "node": "v22.19.0",
+    "transformersJs": "unknown",
+    "onnxruntimeNode": "unknown"
+  },
+  "model": {
+    "id": "Helsinki-NLP/opus-mt-tc-base-en-sh",
+    "dtype": "q8",
+    "numBeams": 4,
+    "modelsDir": "C:\\Users\\38169\\AppData\\Local\\ExYuTitlStudio\\models"
+  },
+  "loadMs": 9682.6539,
+  "runs": [
+    {
+      "profile": "hr",
+      "token": ">>hrv<<",
+      "mode": "single",
+      "ms": 12737.867300000002,
+      "outputs": [
+        "Napravićete veoma ozbiljnu grešku.",
+        "Vlak polazi u sedam.",
+        "Nikad mu nisam vjerovao.",
+        "Gdje si mi ostavio ključeve?",
+        "Ulazi u auto, odmah."
+      ]
+    },
+    {
+      "profile": "bs",
+      "token": ">>bos_Latn<<",
+      "mode": "single",
+      "ms": 841.4195000000018,
+      "outputs": [
+        "Napravit ćete vrlo ozbiljnu grešku.",
+        "Voz polazi u sedam.",
+        "Nikad mu nisam vjerovao.",
+        "Gdje si mi ostavio ključeve?",
+        "Ulazi u auto, odmah."
+      ]
+    },
+    {
+      "profile": "sr-Latn",
+      "token": ">>srp_Latn<<",
+      "mode": "single",
+      "ms": 883.2042999999994,
+      "outputs": [
+        "Napravit ćete vrlo ozbiljnu grešku.",
+        "Voz polazi u sedam.",
+        "Nikad mu nisam vjerovao.",
+        "Gde si mi ostavio ključeve?",
+        "Ulazi u auto, odmah."
+      ]
+    },
+    {
+      "profile": "sr-Cyrl",
+      "token": ">>srp_Latn<<",
+      "mode": "single",
+      "ms": 831.6520000000019,
+      "outputs": [
+        "Napravit ćete vrlo ozbiljnu grešku.",
+        "Voz polazi u sedam.",
+        "Nikad mu nisam vjerovao.",
+        "Gde si mi ostavio ključeve?",
+        "Ulazi u auto, odmah."
+      ]
+    },
+    {
+      "profile": "exyu-neutral",
+      "token": ">>bos_Latn<<",
+      "mode": "single",
+      "ms": 903.3170000000009,
+      "outputs": [
+        "Napravit ćete vrlo ozbiljnu grešku.",
+        "Voz polazi u sedam.",
+        "Nikad mu nisam vjerovao.",
+        "Gdje si mi ostavio ključeve?",
+        "Ulazi u auto, odmah."
+      ]
+    }
+  ],
+  "batch": {
+    "ms": 356.9277000000002,
+    "outputs": [
+      "Napravit ćete vrlo ozbiljnu grešku.",
+      "Voz polazi u sedam.",
+      "Nikad mu nisam vjerovao.",
+      "Gdje si mi ostavio ključeve?",
+      "Ulazi u auto, odmah."
+    ],
+    "repeatable": true,
+    "batchEqualsSingle": false
+  },
+  "resources": {
+    "peakRssMb": 465.49609375,
+    "cpuUserMs": 14016,
+    "cpuSystemMs": 5031,
+    "wallMs": 16962.915699999998,
+    "avgCoresBusy": 1.1228612071685296
+  }
+}

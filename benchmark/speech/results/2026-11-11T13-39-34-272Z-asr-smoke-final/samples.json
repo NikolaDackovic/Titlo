@@ -1,0 +1,158 @@
+[
+  {
+    "model": "onnx-community/whisper-base",
+    "id": "en-t01-david-r0",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": "en",
+    "category": "synthetic-clean",
+    "evaluation": "wer",
+    "expectedLanguage": "en",
+    "audioMs": 4705,
+    "transcribeMs": 13997,
+    "rtf": 2.975,
+    "cpuPercent": 27.3,
+    "hypothesis": "Hello, I am your AI assistant. Welcome aboard.",
+    "segments": 2,
+    "usedLanguage": "en",
+    "error": null,
+    "score": {
+      "strict": {
+        "wer": {
+          "n": 8,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0,
+          "hits": 8,
+          "rate": 0
+        },
+        "cer": {
+          "n": 46,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0,
+          "hits": 46,
+          "rate": 0
+        }
+      },
+      "normalized": {
+        "wer": {
+          "n": 8,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0,
+          "hits": 8,
+          "rate": 0
+        },
+        "cer": {
+          "n": 43,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0,
+          "hits": 43,
+          "rate": 0
+        }
+      },
+      "diacriticOnlyErrors": 0,
+      "scriptDiffers": false,
+      "errors": []
+    },
+    "detection": {
+      "groups": {
+        "en": 0.9795204661412221,
+        "sh": 0.00003928385793765148,
+        "other": 0.002848534163343184,
+        "otherCode": "cy"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.9795204661412221
+        },
+        {
+          "code": "cy",
+          "probability": 0.002848534163343184
+        },
+        {
+          "code": "ja",
+          "probability": 0.0024984832594861445
+        },
+        {
+          "code": "nn",
+          "probability": 0.0013313112901545835
+        },
+        {
+          "code": "de",
+          "probability": 0.0009765175097195182
+        }
+      ],
+      "noSpeechProb": 0.0333121210305896,
+      "windows": 1,
+      "speechSeconds": 2.28,
+      "status": "detected",
+      "language": "en",
+      "probability": 0.9795204661412221,
+      "variantIsHint": false,
+      "reason": "ok"
+    },
+    "detectMs": null,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-base",
+    "id": "ctl-music-10s",
+    "dataset": "asr-synthetic-en@1.0.0",
+    "language": null,
+    "category": "no-speech",
+    "evaluation": "detection-only",
+    "expectedLanguage": "no-speech",
+    "audioMs": 10000,
+    "transcribeMs": 5601,
+    "rtf": 0.56,
+    "cpuPercent": 23.6,
+    "hypothesis": null,
+    "segments": null,
+    "usedLanguage": null,
+    "error": "LanguageNotDetected: No speech found for language detection",
+    "score": null,
+    "detection": {
+      "status": "no-speech",
+      "language": null,
+      "probability": 0,
+      "variantIsHint": false,
+      "groups": {
+        "en": 0.3333250213700633,
+        "sh": 0.0006273561644855565,
+        "other": 0.12027151233831232,
+        "otherCode": "pt"
+      },
+      "candidates": [
+        {
+          "code": "en",
+          "probability": 0.3333250213700633
+        },
+        {
+          "code": "pt",
+          "probability": 0.12027151233831232
+        },
+        {
+          "code": "si",
+          "probability": 0.07406279423036885
+        },
+        {
+          "code": "ro",
+          "probability": 0.06182951556616418
+        },
+        {
+          "code": "nn",
+          "probability": 0.049254468577709036
+        }
+      ],
+      "noSpeechProb": 0.8668867521019524,
+      "windows": 1,
+      "speechSeconds": 10,
+      "reason": "model-no-speech"
+    },
+    "detectMs": null,
+    "detectionError": null
+  }
+]

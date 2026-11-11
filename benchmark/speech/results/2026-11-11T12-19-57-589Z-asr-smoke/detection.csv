@@ -1,0 +1,4 @@
+model,id,expected,status,reason,language,probability,p_en,p_sr_hr_bs,p_other,other_code,no_speech_prob,speech_seconds,windows,detect_ms,correct,error
+onnx-community/whisper-base,en-t01-david-r0,en,,,,,,,,,,,,18294,,Error: Cannot read properties of undefined (reading 'tokens_to_ids')
+onnx-community/whisper-base,en-t14-zira-r0,en,,,,,,,,,,,,10268,,Error: Cannot read properties of undefined (reading 'tokens_to_ids')
+onnx-community/whisper-base,ctl-silence-10s,no-speech,no-speech,silence,,0,0,0,0,,1,0,0,75,true,

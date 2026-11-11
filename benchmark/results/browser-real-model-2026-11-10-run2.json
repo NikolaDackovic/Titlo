@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-10T20:27:53.825Z",
+  "runtime": "browser: Transformers.js + onnxruntime-web (WASM) in a Web Worker, Edge headless",
+  "browserModelLoadMs": 43722,
+  "edgeWorkingSetMbBefore": 767,
+  "edgeWorkingSetMbAfterLoad": 685,
+  "browserTranslateMs": 11553,
+  "edgeWorkingSetMbAfterTranslate": 325,
+  "outputs": [
+    "Знаш шта? Никад му нисам веровао.",
+    "Ни једном.",
+    "Воз полази у седам.",
+    "Ђорђе: Шташ? Жвакови!"
+  ],
+  "checks": [
+    {
+      "name": "UI shows \"Loading model…\"",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Model loads in the browser worker",
+      "ok": true,
+      "detail": "43.7 s"
+    },
+    {
+      "name": "Panel says translation runs locally",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Real translation job finishes in the browser",
+      "ok": true,
+      "detail": "11.6 s for 4 subtitles"
+    },
+    {
+      "name": "Outputs are Cyrillic model translations (no TEST marker, no source text)",
+      "ok": true,
+      "detail": "[\"Знаш шта? Никад му нисам веровао.\",\"Ни једном.\",\"Воз полази у седам.\",\"Ђорђе: Шташ? Жвакови!\"]"
+    },
+    {
+      "name": "No uncaught page errors",
+      "ok": true,
+      "detail": ""
+    }
+  ]
+}

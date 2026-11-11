@@ -1,0 +1,109 @@
+{
+  "kind": "real-model-smoke-test",
+  "date": "2026-11-10T20:20:08.637Z",
+  "machine": {
+    "os": "Windows_NT 10.0.19045",
+    "cpu": "AMD Ryzen 3 3200U with Radeon Vega Mobile Gfx  ",
+    "threads": 4,
+    "ramGb": 3.4,
+    "freeRamGbAtEnd": 0.34
+  },
+  "versions": {
+    "node": "v22.19.0",
+    "transformersJs": "4.3.2",
+    "onnxruntimeNode": "1.30.0"
+  },
+  "model": {
+    "id": "Helsinki-NLP/opus-mt-tc-base-en-sh",
+    "dtype": "q8",
+    "numBeams": 4,
+    "modelsDir": "C:\\Users\\38169\\AppData\\Local\\ExYuTitlStudio\\models"
+  },
+  "loadMs": 5924.981599999999,
+  "runs": [
+    {
+      "profile": "hr",
+      "token": ">>hrv<<",
+      "mode": "single",
+      "ms": 8296.745299999999,
+      "outputs": [
+        "Napravit ćeš ozbiljnu grešku.",
+        "Vlak kreće u sedam.",
+        "Nikad mu nisam vjerovao.",
+        "Gdje si mi ostavio ključeve?",
+        "Ulazi u auto. Odmah."
+      ]
+    },
+    {
+      "profile": "bs",
+      "token": ">>bos_Latn<<",
+      "mode": "single",
+      "ms": 908.8373999999985,
+      "outputs": [
+        "Napravićeš ozbiljnu grešku.",
+        "Voz polazi u sedam.",
+        "Nikad mu nisam vjerovao.",
+        "Gdje si mi ostavio ključeve?",
+        "Ulazi u auto. Odmah."
+      ]
+    },
+    {
+      "profile": "sr-Latn",
+      "token": ">>srp_Latn<<",
+      "mode": "single",
+      "ms": 983.8918000000031,
+      "outputs": [
+        "Napravićeš ozbiljnu grešku.",
+        "Voz polazi u sedam.",
+        "Nikad mu nisam verovao.",
+        "Gde si mi ostavio ključeve?",
+        "Ulazi u auto. Odmah."
+      ]
+    },
+    {
+      "profile": "sr-Cyrl",
+      "token": ">>srp_Latn<<",
+      "mode": "single",
+      "ms": 844.4490999999998,
+      "outputs": [
+        "Napravićeš ozbiljnu grešku.",
+        "Voz polazi u sedam.",
+        "Nikad mu nisam verovao.",
+        "Gde si mi ostavio ključeve?",
+        "Ulazi u auto. Odmah."
+      ]
+    },
+    {
+      "profile": "exyu-neutral",
+      "token": ">>bos_Latn<<",
+      "mode": "single",
+      "ms": 885.9053999999996,
+      "outputs": [
+        "Napravićeš ozbiljnu grešku.",
+        "Voz polazi u sedam.",
+        "Nikad mu nisam vjerovao.",
+        "Gdje si mi ostavio ključeve?",
+        "Ulazi u auto. Odmah."
+      ]
+    }
+  ],
+  "batch": {
+    "ms": 863.8673000000017,
+    "outputs": [
+      "Napravit ćeš ozbiljnu grešku.",
+      "Vlak kreće u sedam.",
+      "Nikad mu nisam vjerovao.",
+      "Gdje si mi ostavio ključeve?",
+      "Ulazi u auto. Odmah."
+    ],
+    "repeatable": true,
+    "batchEqualsSingle": true
+  },
+  "resources": {
+    "peakRssMb": 467.9609375,
+    "cpuUserMs": 19187,
+    "cpuSystemMs": 2375,
+    "wallMs": 13717.5671,
+    "avgCoresBusy": 1.571853072984057
+  }
+}

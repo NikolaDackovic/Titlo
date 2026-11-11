@@ -1,0 +1,1336 @@
+{
+  "runId": "2026-11-11T12-53-39-778Z-asr-explicit",
+  "date": "2026-11-11T12:53:41.312Z",
+  "hardwareAtStart": {
+    "cpu": "AMD Ryzen 3 3200U with Radeon Vega Mobile Gfx",
+    "physicalCores": 2,
+    "logicalCores": 4,
+    "gpu": "AMD Radeon(TM) Vega 3 Graphics (512 MB)",
+    "os": "Microsoft Windows 10 Home Single Language 10.0.19045 64-bit",
+    "availablePhysicalMb": 319,
+    "freeCommitMb": 2869,
+    "commitLimitMb": 14212,
+    "totalPhysicalMb": 3460
+  },
+  "node": "v22.19.0",
+  "edge": "Edg/157.0.4341.42",
+  "runtime": {
+    "transformersJs": "4.3.2",
+    "onnxruntimeWeb": "1.31.0-dev.20260914-8d85527a0",
+    "backend": "onnxruntime-web WASM (CPU) in a Web Worker, headless Edge"
+  },
+  "config": {
+    "languageMode": "explicit",
+    "detect": false,
+    "transcribe": true,
+    "decode": {
+      "return_timestamps": true,
+      "chunk_length_s": 30,
+      "stride_length_s": 5,
+      "task": "transcribe"
+    },
+    "runtime": {
+      "dtype": "q8",
+      "device": "wasm"
+    },
+    "blockTargetSec": 90,
+    "decoding": "greedy (Transformers.js 4.3 ignores num_beams)",
+    "minFreeCommitMb": 1500
+  },
+  "datasets": [
+    {
+      "name": "asr-synthetic-en",
+      "version": "1.0.0",
+      "file": "benchmark\\speech\\datasets\\asr-synthetic-en-v1.json",
+      "sha256": "4bd7eabf9d9f3c2ca0ba8f7c2059b34836334acfcf483dcf48f442e9f1f95399",
+      "samples": 49
+    }
+  ],
+  "selectedSamples": 49,
+  "command": "npx tsx benchmark/speech/scripts/run-asr-benchmark.ts --label explicit",
+  "hardwareAtEnd": {
+    "availablePhysicalMb": 1136,
+    "freeCommitMb": 3052,
+    "commitLimitMb": 14212,
+    "totalPhysicalMb": 3460
+  },
+  "models": [
+    {
+      "modelId": "onnx-community/whisper-base",
+      "modelInfo": {
+        "revision": "27a07b4b52b3a4c5886134bb4320e93e1a4bbc7c",
+        "totalBytes": 79700989,
+        "onnx": [
+          {
+            "path": "onnx/encoder_model_quantized.onnx",
+            "sha256": "5862993336bf33acd23736071aae2b32261d3b1b2f37780194460d4ef974dd46"
+          },
+          {
+            "path": "onnx/decoder_model_merged_quantized.onnx",
+            "sha256": "fa3ef9902734ce5ae6f9ef2bdb2ba9a6c4b5785b09f4f420ce036573dc9d090b"
+          }
+        ]
+      },
+      "memoryBefore": {
+        "availablePhysicalMb": 78,
+        "freeCommitMb": 2489,
+        "commitLimitMb": 14212,
+        "totalPhysicalMb": 3460
+      },
+      "page": {
+        "available": true,
+        "message": "Pronađen onnx-community/whisper-base.",
+        "crossOriginIsolated": false,
+        "hardwareConcurrency": 4
+      },
+      "loadMs": 16675,
+      "memoryAfterLoad": {
+        "samples": 10,
+        "peakWorkingSetMb": 1083,
+        "peakPrivateMb": 1122,
+        "minAvailablePhysicalMb": 39,
+        "minFreeCommitMb": 1989,
+        "peakPrivateByPidMb": {
+          "1524": 19,
+          "1560": 668,
+          "5424": 66,
+          "5672": 10,
+          "6536": 21,
+          "8616": 25,
+          "10744": 18,
+          "10844": 30,
+          "12036": 20,
+          "12924": 8,
+          "13220": 7,
+          "13496": 7,
+          "15056": 20,
+          "15616": 8,
+          "15956": 16,
+          "16064": 26,
+          "16592": 27,
+          "17024": 24,
+          "17584": 2,
+          "17680": 125
+        }
+      },
+      "wallMs": 304790,
+      "crashes": 0,
+      "memoryDuringRun": {
+        "samples": 213,
+        "peakWorkingSetMb": 779,
+        "peakPrivateMb": 1254,
+        "minAvailablePhysicalMb": 72,
+        "minFreeCommitMb": 1678,
+        "peakPrivateByPidMb": {
+          "1524": 20,
+          "1560": 810,
+          "5412": 8,
+          "5424": 71,
+          "6536": 21,
+          "8616": 24,
+          "10744": 16,
+          "10844": 29,
+          "12036": 21,
+          "12924": 9,
+          "13184": 2,
+          "13220": 7,
+          "13412": 105,
+          "13496": 7,
+          "14444": 8,
+          "15056": 20,
+          "15616": 7,
+          "15956": 16,
+          "16064": 27,
+          "16376": 24,
+          "16592": 26,
+          "17024": 24,
+          "17584": 3,
+          "17680": 133
+        }
+      },
+      "memoryPressure": "yes: available physical RAM fell to 72 MB during the run; timings include paging",
+      "pageErrors": [],
+      "memoryAfterClose": {
+        "samples": 2,
+        "peakWorkingSetMb": 235,
+        "peakPrivateMb": 379,
+        "minAvailablePhysicalMb": 984,
+        "minFreeCommitMb": 2827,
+        "peakPrivateByPidMb": {
+          "1524": 20,
+          "5412": 8,
+          "5424": 66,
+          "10744": 15,
+          "10844": 29,
+          "12036": 20,
+          "13220": 7,
+          "14444": 8,
+          "15056": 20,
+          "15956": 16,
+          "16064": 26,
+          "17024": 24,
+          "17584": 3,
+          "17680": 116
+        }
+      }
+    },
+    {
+      "modelId": "onnx-community/whisper-small",
+      "modelInfo": {
+        "revision": "36050c46d777d46dc4b5f43f6d90574fc38f8732",
+        "totalBytes": 251883411,
+        "onnx": [
+          {
+            "path": "onnx/encoder_model_quantized.onnx",
+            "sha256": "a43a83f3c5361cd591cfa7c36f14b43cf7cb22f47a415cc14a8d557be800fa92"
+          },
+          {
+            "path": "onnx/decoder_model_merged_quantized.onnx",
+            "sha256": "ec07c3cbb64172c39791e26ee870a65ac22b458c36722bfe2776b3dbf741e0c9"
+          }
+        ]
+      },
+      "memoryBefore": {
+        "availablePhysicalMb": 920,
+        "freeCommitMb": 2886,
+        "commitLimitMb": 14212,
+        "totalPhysicalMb": 3460
+      },
+      "page": {
+        "available": true,
+        "message": "Pronađen onnx-community/whisper-small.",
+        "crossOriginIsolated": false,
+        "hardwareConcurrency": 4
+      },
+      "loadMs": 15561,
+      "memoryAfterLoad": {
+        "samples": 9,
+        "peakWorkingSetMb": 967,
+        "peakPrivateMb": 1614,
+        "minAvailablePhysicalMb": 148,
+        "minFreeCommitMb": 1566,
+        "peakPrivateByPidMb": {
+          "1524": 20,
+          "5412": 8,
+          "5424": 67,
+          "10744": 17,
+          "10844": 29,
+          "12036": 20,
+          "13220": 7,
+          "14444": 8,
+          "15056": 20,
+          "15764": 22,
+          "15956": 1287,
+          "16064": 26,
+          "17024": 24,
+          "17584": 3,
+          "17680": 106
+        }
+      },
+      "wallMs": 932567,
+      "crashes": 0,
+      "memoryDuringRun": {
+        "samples": 673,
+        "peakWorkingSetMb": 1098,
+        "peakPrivateMb": 2025,
+        "minAvailablePhysicalMb": 41,
+        "minFreeCommitMb": 1328,
+        "peakPrivateByPidMb": {
+          "1524": 20,
+          "5412": 8,
+          "5424": 72,
+          "10744": 15,
+          "10844": 29,
+          "12036": 21,
+          "12384": 6,
+          "13220": 7,
+          "14444": 8,
+          "15056": 20,
+          "15764": 22,
+          "15956": 1683,
+          "16064": 26,
+          "17024": 24,
+          "17584": 3,
+          "17680": 125
+        }
+      },
+      "memoryPressure": "yes: available physical RAM fell to 41 MB during the run; timings include paging",
+      "pageErrors": [],
+      "memoryAfterClose": {
+        "samples": 2,
+        "peakWorkingSetMb": 166,
+        "peakPrivateMb": 381,
+        "minAvailablePhysicalMb": 1347,
+        "minFreeCommitMb": 2836,
+        "peakPrivateByPidMb": {
+          "1524": 20,
+          "5412": 8,
+          "5424": 67,
+          "10744": 15,
+          "10844": 29,
+          "12036": 21,
+          "13220": 7,
+          "14444": 8,
+          "15056": 20,
+          "15764": 22,
+          "16064": 26,
+          "17024": 24,
+          "17584": 3,
+          "17680": 111
+        }
+      }
+    }
+  ],
+  "summary": [
+    {
+      "model": "onnx-community/whisper-base",
+      "overall": {
+        "samples": 49,
+        "scored": 46,
+        "failed": 0,
+        "emptyOutputs": 0,
+        "strict": {
+          "wer": {
+            "n": 523,
+            "substitutions": 33,
+            "deletions": 26,
+            "insertions": 2,
+            "hits": 464,
+            "rate": 0.1166
+          },
+          "cer": {
+            "n": 2944,
+            "substitutions": 64,
+            "deletions": 132,
+            "insertions": 8,
+            "hits": 2748,
+            "rate": 0.0693
+          }
+        },
+        "normalized": {
+          "wer": {
+            "n": 523,
+            "substitutions": 27,
+            "deletions": 22,
+            "insertions": 2,
+            "hits": 474,
+            "rate": 0.0975
+          },
+          "cer": {
+            "n": 2876,
+            "substitutions": 48,
+            "deletions": 134,
+            "insertions": 6,
+            "hits": 2694,
+            "rate": 0.0654
+          }
+        },
+        "diacriticOnlyErrors": 0,
+        "audioSeconds": 231.3,
+        "transcribeSeconds": 302.1,
+        "rtf": 1.306,
+        "meanCpuPercent": 25.2
+      },
+      "byCategory": {
+        "synthetic-clean": {
+          "samples": 18,
+          "scored": 18,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 216,
+              "substitutions": 6,
+              "deletions": 4,
+              "insertions": 1,
+              "hits": 206,
+              "rate": 0.0509
+            },
+            "cer": {
+              "n": 1158,
+              "substitutions": 6,
+              "deletions": 16,
+              "insertions": 1,
+              "hits": 1136,
+              "rate": 0.0199
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 216,
+              "substitutions": 5,
+              "deletions": 4,
+              "insertions": 1,
+              "hits": 207,
+              "rate": 0.0463
+            },
+            "cer": {
+              "n": 1132,
+              "substitutions": 5,
+              "deletions": 16,
+              "insertions": 1,
+              "hits": 1111,
+              "rate": 0.0194
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 81.7,
+          "transcribeSeconds": 125.8,
+          "rtf": 1.54,
+          "meanCpuPercent": 25.2
+        },
+        "numbers": {
+          "samples": 4,
+          "scored": 4,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 48,
+              "substitutions": 6,
+              "deletions": 18,
+              "insertions": 0,
+              "hits": 24,
+              "rate": 0.5
+            },
+            "cer": {
+              "n": 278,
+              "substitutions": 24,
+              "deletions": 114,
+              "insertions": 0,
+              "hits": 140,
+              "rate": 0.4964
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 48,
+              "substitutions": 10,
+              "deletions": 14,
+              "insertions": 0,
+              "hits": 24,
+              "rate": 0.5
+            },
+            "cer": {
+              "n": 272,
+              "substitutions": 18,
+              "deletions": 116,
+              "insertions": 0,
+              "hits": 138,
+              "rate": 0.4926
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 19,
+          "transcribeSeconds": 22.2,
+          "rtf": 1.171,
+          "meanCpuPercent": 25.4
+        },
+        "names-terms": {
+          "samples": 6,
+          "scored": 6,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 64,
+              "substitutions": 12,
+              "deletions": 2,
+              "insertions": 0,
+              "hits": 50,
+              "rate": 0.2188
+            },
+            "cer": {
+              "n": 400,
+              "substitutions": 16,
+              "deletions": 1,
+              "insertions": 3,
+              "hits": 383,
+              "rate": 0.05
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 64,
+              "substitutions": 4,
+              "deletions": 2,
+              "insertions": 0,
+              "hits": 58,
+              "rate": 0.0938
+            },
+            "cer": {
+              "n": 390,
+              "substitutions": 8,
+              "deletions": 1,
+              "insertions": 1,
+              "hits": 381,
+              "rate": 0.0256
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 28.9,
+          "transcribeSeconds": 35.8,
+          "rtf": 1.241,
+          "meanCpuPercent": 25.2
+        },
+        "very-short": {
+          "samples": 2,
+          "scored": 2,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 2,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 2,
+              "rate": 0
+            },
+            "cer": {
+              "n": 8,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 8,
+              "rate": 0
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 2,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 2,
+              "rate": 0
+            },
+            "cer": {
+              "n": 6,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 6,
+              "rate": 0
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 2.6,
+          "transcribeSeconds": 9.5,
+          "rtf": 3.626,
+          "meanCpuPercent": 24.8
+        },
+        "synthetic-fast": {
+          "samples": 4,
+          "scored": 4,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 55,
+              "substitutions": 2,
+              "deletions": 1,
+              "insertions": 0,
+              "hits": 52,
+              "rate": 0.0545
+            },
+            "cer": {
+              "n": 302,
+              "substitutions": 5,
+              "deletions": 1,
+              "insertions": 0,
+              "hits": 296,
+              "rate": 0.0199
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 55,
+              "substitutions": 2,
+              "deletions": 1,
+              "insertions": 0,
+              "hits": 52,
+              "rate": 0.0545
+            },
+            "cer": {
+              "n": 296,
+              "substitutions": 5,
+              "deletions": 1,
+              "insertions": 0,
+              "hits": 290,
+              "rate": 0.0203
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 11.4,
+          "transcribeSeconds": 24.1,
+          "rtf": 2.113,
+          "meanCpuPercent": 25.2
+        },
+        "synthetic-noise": {
+          "samples": 6,
+          "scored": 6,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 69,
+              "substitutions": 4,
+              "deletions": 1,
+              "insertions": 0,
+              "hits": 64,
+              "rate": 0.0725
+            },
+            "cer": {
+              "n": 399,
+              "substitutions": 9,
+              "deletions": 0,
+              "insertions": 3,
+              "hits": 390,
+              "rate": 0.0301
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 69,
+              "substitutions": 3,
+              "deletions": 1,
+              "insertions": 0,
+              "hits": 65,
+              "rate": 0.058
+            },
+            "cer": {
+              "n": 390,
+              "substitutions": 8,
+              "deletions": 0,
+              "insertions": 3,
+              "hits": 382,
+              "rate": 0.0282
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 28.9,
+          "transcribeSeconds": 35.7,
+          "rtf": 1.234,
+          "meanCpuPercent": 25.1
+        },
+        "synthetic-music": {
+          "samples": 6,
+          "scored": 6,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 69,
+              "substitutions": 3,
+              "deletions": 0,
+              "insertions": 1,
+              "hits": 66,
+              "rate": 0.058
+            },
+            "cer": {
+              "n": 399,
+              "substitutions": 4,
+              "deletions": 0,
+              "insertions": 1,
+              "hits": 395,
+              "rate": 0.0125
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 69,
+              "substitutions": 3,
+              "deletions": 0,
+              "insertions": 1,
+              "hits": 66,
+              "rate": 0.058
+            },
+            "cer": {
+              "n": 390,
+              "substitutions": 4,
+              "deletions": 0,
+              "insertions": 1,
+              "hits": 386,
+              "rate": 0.0128
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 28.9,
+          "transcribeSeconds": 34.9,
+          "rtf": 1.21,
+          "meanCpuPercent": 25.5
+        },
+        "no-speech": {
+          "samples": 3,
+          "scored": 0,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 30,
+          "transcribeSeconds": 14.2,
+          "rtf": 0.472,
+          "meanCpuPercent": 24.7
+        }
+      },
+      "byLanguage": {
+        "en": {
+          "samples": 46,
+          "scored": 46,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 523,
+              "substitutions": 33,
+              "deletions": 26,
+              "insertions": 2,
+              "hits": 464,
+              "rate": 0.1166
+            },
+            "cer": {
+              "n": 2944,
+              "substitutions": 64,
+              "deletions": 132,
+              "insertions": 8,
+              "hits": 2748,
+              "rate": 0.0693
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 523,
+              "substitutions": 27,
+              "deletions": 22,
+              "insertions": 2,
+              "hits": 474,
+              "rate": 0.0975
+            },
+            "cer": {
+              "n": 2876,
+              "substitutions": 48,
+              "deletions": 134,
+              "insertions": 6,
+              "hits": 2694,
+              "rate": 0.0654
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 201.3,
+          "transcribeSeconds": 288,
+          "rtf": 1.431,
+          "meanCpuPercent": 25.2
+        },
+        "none": {
+          "samples": 3,
+          "scored": 0,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 30,
+          "transcribeSeconds": 14.2,
+          "rtf": 0.472,
+          "meanCpuPercent": 24.7
+        }
+      },
+      "detection": null
+    },
+    {
+      "model": "onnx-community/whisper-small",
+      "overall": {
+        "samples": 49,
+        "scored": 46,
+        "failed": 0,
+        "emptyOutputs": 0,
+        "strict": {
+          "wer": {
+            "n": 523,
+            "substitutions": 25,
+            "deletions": 23,
+            "insertions": 0,
+            "hits": 475,
+            "rate": 0.0918
+          },
+          "cer": {
+            "n": 2944,
+            "substitutions": 51,
+            "deletions": 131,
+            "insertions": 6,
+            "hits": 2762,
+            "rate": 0.0639
+          }
+        },
+        "normalized": {
+          "wer": {
+            "n": 523,
+            "substitutions": 21,
+            "deletions": 19,
+            "insertions": 0,
+            "hits": 483,
+            "rate": 0.0765
+          },
+          "cer": {
+            "n": 2876,
+            "substitutions": 35,
+            "deletions": 133,
+            "insertions": 6,
+            "hits": 2708,
+            "rate": 0.0605
+          }
+        },
+        "diacriticOnlyErrors": 0,
+        "audioSeconds": 231.3,
+        "transcribeSeconds": 929.8,
+        "rtf": 4.02,
+        "meanCpuPercent": 24.7
+      },
+      "byCategory": {
+        "synthetic-clean": {
+          "samples": 18,
+          "scored": 18,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 216,
+              "substitutions": 4,
+              "deletions": 4,
+              "insertions": 0,
+              "hits": 208,
+              "rate": 0.037
+            },
+            "cer": {
+              "n": 1158,
+              "substitutions": 4,
+              "deletions": 16,
+              "insertions": 0,
+              "hits": 1138,
+              "rate": 0.0173
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 216,
+              "substitutions": 4,
+              "deletions": 4,
+              "insertions": 0,
+              "hits": 208,
+              "rate": 0.037
+            },
+            "cer": {
+              "n": 1132,
+              "substitutions": 4,
+              "deletions": 16,
+              "insertions": 0,
+              "hits": 1112,
+              "rate": 0.0177
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 81.7,
+          "transcribeSeconds": 351.4,
+          "rtf": 4.302,
+          "meanCpuPercent": 24.8
+        },
+        "numbers": {
+          "samples": 4,
+          "scored": 4,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 48,
+              "substitutions": 6,
+              "deletions": 18,
+              "insertions": 0,
+              "hits": 24,
+              "rate": 0.5
+            },
+            "cer": {
+              "n": 278,
+              "substitutions": 24,
+              "deletions": 114,
+              "insertions": 0,
+              "hits": 140,
+              "rate": 0.4964
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 48,
+              "substitutions": 10,
+              "deletions": 14,
+              "insertions": 0,
+              "hits": 24,
+              "rate": 0.5
+            },
+            "cer": {
+              "n": 272,
+              "substitutions": 18,
+              "deletions": 116,
+              "insertions": 0,
+              "hits": 138,
+              "rate": 0.4926
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 19,
+          "transcribeSeconds": 73,
+          "rtf": 3.847,
+          "meanCpuPercent": 24.9
+        },
+        "names-terms": {
+          "samples": 6,
+          "scored": 6,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 64,
+              "substitutions": 4,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 60,
+              "rate": 0.0625
+            },
+            "cer": {
+              "n": 400,
+              "substitutions": 4,
+              "deletions": 0,
+              "insertions": 3,
+              "hits": 396,
+              "rate": 0.0175
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 64,
+              "substitutions": 1,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 63,
+              "rate": 0.0156
+            },
+            "cer": {
+              "n": 390,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 3,
+              "hits": 390,
+              "rate": 0.0077
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 28.9,
+          "transcribeSeconds": 118.8,
+          "rtf": 4.116,
+          "meanCpuPercent": 24.7
+        },
+        "very-short": {
+          "samples": 2,
+          "scored": 2,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 2,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 2,
+              "rate": 0
+            },
+            "cer": {
+              "n": 8,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 8,
+              "rate": 0
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 2,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 2,
+              "rate": 0
+            },
+            "cer": {
+              "n": 6,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 6,
+              "rate": 0
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 2.6,
+          "transcribeSeconds": 35.4,
+          "rtf": 13.546,
+          "meanCpuPercent": 24.7
+        },
+        "synthetic-fast": {
+          "samples": 4,
+          "scored": 4,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 55,
+              "substitutions": 3,
+              "deletions": 1,
+              "insertions": 0,
+              "hits": 51,
+              "rate": 0.0727
+            },
+            "cer": {
+              "n": 302,
+              "substitutions": 6,
+              "deletions": 1,
+              "insertions": 0,
+              "hits": 295,
+              "rate": 0.0232
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 55,
+              "substitutions": 2,
+              "deletions": 1,
+              "insertions": 0,
+              "hits": 52,
+              "rate": 0.0545
+            },
+            "cer": {
+              "n": 296,
+              "substitutions": 5,
+              "deletions": 1,
+              "insertions": 0,
+              "hits": 290,
+              "rate": 0.0203
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 11.4,
+          "transcribeSeconds": 74.5,
+          "rtf": 6.547,
+          "meanCpuPercent": 24.7
+        },
+        "synthetic-noise": {
+          "samples": 6,
+          "scored": 6,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 69,
+              "substitutions": 4,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 65,
+              "rate": 0.058
+            },
+            "cer": {
+              "n": 399,
+              "substitutions": 8,
+              "deletions": 0,
+              "insertions": 3,
+              "hits": 391,
+              "rate": 0.0276
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 69,
+              "substitutions": 2,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 67,
+              "rate": 0.029
+            },
+            "cer": {
+              "n": 390,
+              "substitutions": 5,
+              "deletions": 0,
+              "insertions": 3,
+              "hits": 385,
+              "rate": 0.0205
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 28.9,
+          "transcribeSeconds": 114.5,
+          "rtf": 3.963,
+          "meanCpuPercent": 24.7
+        },
+        "synthetic-music": {
+          "samples": 6,
+          "scored": 6,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 69,
+              "substitutions": 4,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 65,
+              "rate": 0.058
+            },
+            "cer": {
+              "n": 399,
+              "substitutions": 5,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 394,
+              "rate": 0.0125
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 69,
+              "substitutions": 2,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 67,
+              "rate": 0.029
+            },
+            "cer": {
+              "n": 390,
+              "substitutions": 3,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 387,
+              "rate": 0.0077
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 28.9,
+          "transcribeSeconds": 113.2,
+          "rtf": 3.919,
+          "meanCpuPercent": 24.7
+        },
+        "no-speech": {
+          "samples": 3,
+          "scored": 0,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 30,
+          "transcribeSeconds": 49.1,
+          "rtf": 1.636,
+          "meanCpuPercent": 24.9
+        }
+      },
+      "byLanguage": {
+        "en": {
+          "samples": 46,
+          "scored": 46,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 523,
+              "substitutions": 25,
+              "deletions": 23,
+              "insertions": 0,
+              "hits": 475,
+              "rate": 0.0918
+            },
+            "cer": {
+              "n": 2944,
+              "substitutions": 51,
+              "deletions": 131,
+              "insertions": 6,
+              "hits": 2762,
+              "rate": 0.0639
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 523,
+              "substitutions": 21,
+              "deletions": 19,
+              "insertions": 0,
+              "hits": 483,
+              "rate": 0.0765
+            },
+            "cer": {
+              "n": 2876,
+              "substitutions": 35,
+              "deletions": 133,
+              "insertions": 6,
+              "hits": 2708,
+              "rate": 0.0605
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 201.3,
+          "transcribeSeconds": 880.8,
+          "rtf": 4.376,
+          "meanCpuPercent": 24.7
+        },
+        "none": {
+          "samples": 3,
+          "scored": 0,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 30,
+          "transcribeSeconds": 49.1,
+          "rtf": 1.636,
+          "meanCpuPercent": 24.9
+        }
+      },
+      "detection": null
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "version": "1.0.0",
+  "note": "Texts read by the Windows TTS voices. The text IS the reference transcript (exact by construction). Synthetic speech: not representative of real human voices.",
+  "texts": [
+    { "id": "t01", "category": "synthetic-clean", "text": "Hello, I am your AI assistant. Welcome aboard." },
+    { "id": "t02", "category": "synthetic-clean", "text": "This is the website of a hair salon in Belgrade." },
+    { "id": "t03", "category": "synthetic-clean", "text": "The customer asks a question and the chatbot answers it in a few seconds." },
+    { "id": "t04", "category": "synthetic-clean", "text": "Log in to your account, copy one line of code and paste it on your site." },
+    { "id": "t05", "category": "synthetic-clean", "text": "Refresh the page and the robot appears in the bottom right corner." },
+    { "id": "t06", "category": "numbers", "text": "Our meeting starts at nine thirty on Monday, the fourteenth of March." },
+    { "id": "t07", "category": "numbers", "text": "The package costs twenty nine dollars and ninety nine cents per month." },
+    { "id": "t08", "category": "names-terms", "text": "Novak Djokovic and Nikola Jokic were both born in Serbia." },
+    { "id": "t09", "category": "names-terms", "text": "Install Node, open PowerShell and run the install command." },
+    { "id": "t10", "category": "names-terms", "text": "Whisper converts speech into text, and the subtitles are synchronized with the video." },
+    { "id": "t11", "category": "synthetic-clean", "text": "Please don't forget to save your project before closing the editor." },
+    { "id": "t12", "category": "synthetic-clean", "text": "We recorded this podcast episode in a small studio with two microphones." },
+    { "id": "t13", "category": "synthetic-clean", "text": "Subtitles should not be longer than two lines or forty two characters per line." },
+    { "id": "t14", "category": "very-short", "text": "Yes." },
+    { "id": "t15", "category": "synthetic-clean", "text": "Thank you for watching, and see you in the next episode." }
+  ],
+  "fast": ["t03", "t04", "t10", "t12"],
+  "noisy": ["t01", "t03", "t05", "t08", "t10", "t12"]
+}

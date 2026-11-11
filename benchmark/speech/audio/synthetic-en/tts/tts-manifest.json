@@ -1,0 +1,213 @@
+﻿{
+    "generatedAt":  "2026-11-11T12:12:44.5748590Z",
+    "engine":  "System.Speech.Synthesis.SpeechSynthesizer (Windows SAPI 5)",
+    "os":  "Microsoft Windows 10 Home Single Language 10.0.19045",
+    "format":  "16000 Hz, 16-bit PCM, mono",
+    "volume":  100,
+    "items":  [
+                  {
+                      "textId":  "t01",
+                      "voice":  "Microsoft Zira Desktop",
+                      "rate":  0,
+                      "file":  "benchmark\\speech\\audio\\synthetic-en\\tts\\t01-zira-r0.wav"
+                  },
+                  {
+                      "textId":  "t01",
+                      "voice":  "Microsoft David Desktop",
+                      "rate":  0,
+                      "file":  "benchmark\\speech\\audio\\synthetic-en\\tts\\t01-david-r0.wav"
+                  },
+                  {
+                      "textId":  "t02",
+                      "voice":  "Microsoft Zira Desktop",
+                      "rate":  0,
+                      "file":  "benchmark\\speech\\audio\\synthetic-en\\tts\\t02-zira-r0.wav"
+                  },
+                  {
+                      "textId":  "t02",
+                      "voice":  "Microsoft David Desktop",
+                      "rate":  0,
+                      "file":  "benchmark\\speech\\audio\\synthetic-en\\tts\\t02-david-r0.wav"
+                  },
+                  {
+                      "textId":  "t03",
+                      "voice":  "Microsoft Zira Desktop",
+                      "rate":  0,
+                      "file":  "benchmark\\speech\\audio\\synthetic-en\\tts\\t03-zira-r0.wav"
+                  },
+                  {
+                      "textId":  "t03",
+                      "voice":  "Microsoft David Desktop",
+                      "rate":  0,
+                      "file":  "benchmark\\speech\\audio\\synthetic-en\\tts\\t03-david-r0.wav"
+                  },
+                  {
+                      "textId":  "t04",
+                      "voice":  "Microsoft Zira Desktop",
+                      "rate":  0,
+                      "file":  "benchmark\\speech\\audio\\synthetic-en\\tts\\t04-zira-r0.wav"
+                  },
+                  {
+                      "textId":  "t04",
+                      "voice":  "Microsoft David Desktop",
+                      "rate":  0,
+                      "file":  "benchmark\\speech\\audio\\synthetic-en\\tts\\t04-david-r0.wav"
+                  },
+                  {
+                      "textId":  "t05",
+                      "voice":  "Microsoft Zira Desktop",
+                      "rate":  0,
+                      "file":  "benchmark\\speech\\audio\\synthetic-en\\tts\\t05-zira-r0.wav"
+                  },
+                  {
+                      "textId":  "t05",
+                      "voice":  "Microsoft David Desktop",
+                      "rate":  0,
+                      "file":  "benchmark\\speech\\audio\\synthetic-en\\tts\\t05-david-r0.wav"
+                  },
+                  {
+                      "textId":  "t06",
+                      "voice":  "Microsoft Zira Desktop",
+                      "rate":  0,
+                      "file":  "benchmark\\speech\\audio\\synthetic-en\\tts\\t06-zira-r0.wav"
+                  },
+                  {
+                      "textId":  "t06",
+                      "voice":  "Microsoft David Desktop",
+                      "rate":  0,
+                      "file":  "benchmark\\speech\\audio\\synthetic-en\\tts\\t06-david-r0.wav"
+                  },
+                  {
+                      "textId":  "t07",
+                      "voice":  "Microsoft Zira Desktop",
+                      "rate":  0,
+                      "file":  "benchmark\\speech\\audio\\synthetic-en\\tts\\t07-zira-r0.wav"
+                  },
+                  {
+                      "textId":  "t07",
+                      "voice":  "Microsoft David Desktop",
+                      "rate":  0,
+                      "file":  "benchmark\\speech\\audio\\synthetic-en\\tts\\t07-david-r0.wav"
+                  },
+                  {
+                      "textId":  "t08",
+                      "voice":  "Microsoft Zira Desktop",
+                      "rate":  0,
+                      "file":  "benchmark\\speech\\audio\\synthetic-en\\tts\\t08-zira-r0.wav"
+                  },
+                  {
+                      "textId":  "t08",
+                      "voice":  "Microsoft David Desktop",
+                      "rate":  0,
+                      "file":  "benchmark\\speech\\audio\\synthetic-en\\tts\\t08-david-r0.wav"
+                  },
+                  {
+                      "textId":  "t09",
+                      "voice":  "Microsoft Zira Desktop",
+                      "rate":  0,
+                      "file":  "benchmark\\speech\\audio\\synthetic-en\\tts\\t09-zira-r0.wav"
+                  },
+                  {
+                      "textId":  "t09",
+                      "voice":  "Microsoft David Desktop",
+                      "rate":  0,
+                      "file":  "benchmark\\speech\\audio\\synthetic-en\\tts\\t09-david-r0.wav"
+                  },
+                  {
+                      "textId":  "t10",
+                      "voice":  "Microsoft Zira Desktop",
+                      "rate":  0,
+                      "file":  "benchmark\\speech\\audio\\synthetic-en\\tts\\t10-zira-r0.wav"
+                  },
+                  {
+                      "textId":  "t10",
+                      "voice":  "Microsoft David Desktop",
+                      "rate":  0,
+                      "file":  "benchmark\\speech\\audio\\synthetic-en\\tts\\t10-david-r0.wav"
+                  },
+                  {
+                      "textId":  "t11",
+                      "voice":  "Microsoft Zira Desktop",
+                      "rate":  0,
+                      "file":  "benchmark\\speech\\audio\\synthetic-en\\tts\\t11-zira-r0.wav"
+                  },
+                  {
+                      "textId":  "t11",
+                      "voice":  "Microsoft David Desktop",
+                      "rate":  0,
+                      "file":  "benchmark\\speech\\audio\\synthetic-en\\tts\\t11-david-r0.wav"
+                  },
+                  {
+                      "textId":  "t12",
+                      "voice":  "Microsoft Zira Desktop",
+                      "rate":  0,
+                      "file":  "benchmark\\speech\\audio\\synthetic-en\\tts\\t12-zira-r0.wav"
+                  },
+                  {
+                      "textId":  "t12",
+                      "voice":  "Microsoft David Desktop",
+                      "rate":  0,
+                      "file":  "benchmark\\speech\\audio\\synthetic-en\\tts\\t12-david-r0.wav"
+                  },
+                  {
+                      "textId":  "t13",
+                      "voice":  "Microsoft Zira Desktop",
+                      "rate":  0,
+                      "file":  "benchmark\\speech\\audio\\synthetic-en\\tts\\t13-zira-r0.wav"
+                  },
+                  {
+                      "textId":  "t13",
+                      "voice":  "Microsoft David Desktop",
+                      "rate":  0,
+                      "file":  "benchmark\\speech\\audio\\synthetic-en\\tts\\t13-david-r0.wav"
+                  },
+                  {
+                      "textId":  "t14",
+                      "voice":  "Microsoft Zira Desktop",
+                      "rate":  0,
+                      "file":  "benchmark\\speech\\audio\\synthetic-en\\tts\\t14-zira-r0.wav"
+                  },
+                  {
+                      "textId":  "t14",
+                      "voice":  "Microsoft David Desktop",
+                      "rate":  0,
+                      "file":  "benchmark\\speech\\audio\\synthetic-en\\tts\\t14-david-r0.wav"
+                  },
+                  {
+                      "textId":  "t15",
+                      "voice":  "Microsoft Zira Desktop",
+                      "rate":  0,
+                      "file":  "benchmark\\speech\\audio\\synthetic-en\\tts\\t15-zira-r0.wav"
+                  },
+                  {
+                      "textId":  "t15",
+                      "voice":  "Microsoft David Desktop",
+                      "rate":  0,
+                      "file":  "benchmark\\speech\\audio\\synthetic-en\\tts\\t15-david-r0.wav"
+                  },
+                  {
+                      "textId":  "t03",
+                      "voice":  "Microsoft Zira Desktop",
+                      "rate":  5,
+                      "file":  "benchmark\\speech\\audio\\synthetic-en\\tts\\t03-zira-r5.wav"
+                  },
+                  {
+                      "textId":  "t04",
+                      "voice":  "Microsoft David Desktop",
+                      "rate":  5,
+                      "file":  "benchmark\\speech\\audio\\synthetic-en\\tts\\t04-david-r5.wav"
+                  },
+                  {
+                      "textId":  "t10",
+                      "voice":  "Microsoft Zira Desktop",
+                      "rate":  5,
+                      "file":  "benchmark\\speech\\audio\\synthetic-en\\tts\\t10-zira-r5.wav"
+                  },
+                  {
+                      "textId":  "t12",
+                      "voice":  "Microsoft David Desktop",
+                      "rate":  5,
+                      "file":  "benchmark\\speech\\audio\\synthetic-en\\tts\\t12-david-r5.wav"
+                  }
+              ]
+}

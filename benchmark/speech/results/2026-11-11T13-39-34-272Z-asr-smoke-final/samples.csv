@@ -1,0 +1,3 @@
+model,id,language,category,evaluation,audio_ms,transcribe_ms,rtf,cpu_percent,strict_wer,norm_wer,strict_cer,norm_cer,S,D,I,N,diacritic_only,used_language,hypothesis,error
+onnx-community/whisper-base,en-t01-david-r0,en,synthetic-clean,wer,4705,13997,2.975,27.3,0,0,0,0,0,0,0,8,0,en,"Hello, I am your AI assistant. Welcome aboard.",
+onnx-community/whisper-base,ctl-music-10s,,no-speech,detection-only,10000,5601,0.56,23.6,,,,,,,,,,,,LanguageNotDetected: No speech found for language detection

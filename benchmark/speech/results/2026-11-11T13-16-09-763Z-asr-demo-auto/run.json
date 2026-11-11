@@ -1,0 +1,688 @@
+{
+  "runId": "2026-11-11T13-16-09-763Z-asr-demo-auto",
+  "date": "2026-11-11T13:16:11.290Z",
+  "hardwareAtStart": {
+    "cpu": "AMD Ryzen 3 3200U with Radeon Vega Mobile Gfx",
+    "physicalCores": 2,
+    "logicalCores": 4,
+    "gpu": "AMD Radeon(TM) Vega 3 Graphics (512 MB)",
+    "os": "Microsoft Windows 10 Home Single Language 10.0.19045 64-bit",
+    "availablePhysicalMb": 601,
+    "freeCommitMb": 3222,
+    "commitLimitMb": 14212,
+    "totalPhysicalMb": 3460
+  },
+  "node": "v22.19.0",
+  "edge": "Edg/157.0.4341.42",
+  "runtime": {
+    "transformersJs": "4.3.2",
+    "onnxruntimeWeb": "1.31.0-dev.20260914-8d85527a0",
+    "backend": "onnxruntime-web WASM (CPU) in a Web Worker, headless Edge"
+  },
+  "config": {
+    "languageMode": "auto",
+    "detect": false,
+    "transcribe": true,
+    "decode": {
+      "return_timestamps": true,
+      "chunk_length_s": 30,
+      "stride_length_s": 5,
+      "task": "transcribe"
+    },
+    "runtime": {
+      "dtype": "q8",
+      "device": "wasm"
+    },
+    "blockTargetSec": 90,
+    "decoding": "greedy (Transformers.js 4.3 ignores num_beams)",
+    "minFreeCommitMb": 1500
+  },
+  "datasets": [
+    {
+      "name": "local-demo",
+      "version": "1.0.0",
+      "file": "benchmark\\speech\\datasets\\local-demo.json",
+      "sha256": "8c6a7578db33468d4b4d5a1d78aa8e2c5a06fd1d0842fcb9e36430e0a9765a2f",
+      "samples": 2
+    }
+  ],
+  "selectedSamples": 2,
+  "command": "npx tsx benchmark/speech/scripts/run-asr-benchmark.ts --datasets local-demo --language auto --label demo-auto",
+  "hardwareAtEnd": {
+    "availablePhysicalMb": 1173,
+    "freeCommitMb": 3166,
+    "commitLimitMb": 14212,
+    "totalPhysicalMb": 3460
+  },
+  "models": [
+    {
+      "modelId": "onnx-community/whisper-base",
+      "modelInfo": {
+        "revision": "27a07b4b52b3a4c5886134bb4320e93e1a4bbc7c",
+        "totalBytes": 79700989,
+        "onnx": [
+          {
+            "path": "onnx/encoder_model_quantized.onnx",
+            "sha256": "5862993336bf33acd23736071aae2b32261d3b1b2f37780194460d4ef974dd46"
+          },
+          {
+            "path": "onnx/decoder_model_merged_quantized.onnx",
+            "sha256": "fa3ef9902734ce5ae6f9ef2bdb2ba9a6c4b5785b09f4f420ce036573dc9d090b"
+          }
+        ]
+      },
+      "memoryBefore": {
+        "availablePhysicalMb": 183,
+        "freeCommitMb": 2724,
+        "commitLimitMb": 14212,
+        "totalPhysicalMb": 3460
+      },
+      "page": {
+        "available": true,
+        "message": "Pronađen onnx-community/whisper-base.",
+        "crossOriginIsolated": false,
+        "hardwareConcurrency": 4
+      },
+      "loadMs": 16422,
+      "memoryAfterLoad": {
+        "samples": 6,
+        "peakWorkingSetMb": 1016,
+        "peakPrivateMb": 1112,
+        "minAvailablePhysicalMb": 36,
+        "minFreeCommitMb": 1662,
+        "peakPrivateByPidMb": {
+          "3476": 26,
+          "4668": 27,
+          "8616": 2,
+          "8816": 678,
+          "9196": 25,
+          "10420": 27,
+          "10856": 7,
+          "11292": 17,
+          "12532": 22,
+          "13384": 7,
+          "15416": 24,
+          "15584": 26,
+          "15676": 124,
+          "16340": 27,
+          "17204": 8,
+          "17392": 28,
+          "17804": 25,
+          "17984": 64
+        }
+      },
+      "wallMs": 198630,
+      "crashes": 0,
+      "memoryDuringRun": {
+        "samples": 131,
+        "peakWorkingSetMb": 729,
+        "peakPrivateMb": 1732,
+        "minAvailablePhysicalMb": 17,
+        "minFreeCommitMb": 715,
+        "peakPrivateByPidMb": {
+          "3476": 24,
+          "4668": 27,
+          "7132": 7,
+          "8616": 3,
+          "8816": 1279,
+          "9196": 25,
+          "10420": 26,
+          "10856": 7,
+          "11292": 16,
+          "12440": 8,
+          "12532": 22,
+          "13384": 7,
+          "14152": 9,
+          "15416": 24,
+          "15584": 24,
+          "15676": 127,
+          "16340": 26,
+          "17144": 7,
+          "17164": 10,
+          "17204": 8,
+          "17236": 8,
+          "17392": 28,
+          "17804": 25,
+          "17984": 144,
+          "18412": 106
+        }
+      },
+      "memoryPressure": "yes: available physical RAM fell to 17 MB during the run; timings include paging",
+      "pageErrors": [],
+      "memoryAfterClose": {
+        "samples": 2,
+        "peakWorkingSetMb": 220,
+        "peakPrivateMb": 422,
+        "minAvailablePhysicalMb": 1063,
+        "minFreeCommitMb": 2771,
+        "peakPrivateByPidMb": {
+          "4668": 27,
+          "8616": 3,
+          "9196": 25,
+          "11292": 15,
+          "12440": 8,
+          "12532": 22,
+          "13384": 7,
+          "15416": 24,
+          "15584": 24,
+          "15676": 110,
+          "17236": 8,
+          "17392": 28,
+          "17804": 25,
+          "17984": 96
+        }
+      }
+    },
+    {
+      "modelId": "onnx-community/whisper-small",
+      "modelInfo": {
+        "revision": "36050c46d777d46dc4b5f43f6d90574fc38f8732",
+        "totalBytes": 251883411,
+        "onnx": [
+          {
+            "path": "onnx/encoder_model_quantized.onnx",
+            "sha256": "a43a83f3c5361cd591cfa7c36f14b43cf7cb22f47a415cc14a8d557be800fa92"
+          },
+          {
+            "path": "onnx/decoder_model_merged_quantized.onnx",
+            "sha256": "ec07c3cbb64172c39791e26ee870a65ac22b458c36722bfe2776b3dbf741e0c9"
+          }
+        ]
+      },
+      "memoryBefore": {
+        "availablePhysicalMb": 997,
+        "freeCommitMb": 2803,
+        "commitLimitMb": 14212,
+        "totalPhysicalMb": 3460
+      },
+      "page": {
+        "available": true,
+        "message": "Pronađen onnx-community/whisper-small.",
+        "crossOriginIsolated": false,
+        "hardwareConcurrency": 4
+      },
+      "loadMs": 11610,
+      "memoryAfterLoad": {
+        "samples": 7,
+        "peakWorkingSetMb": 1113,
+        "peakPrivateMb": 1658,
+        "minAvailablePhysicalMb": 198,
+        "minFreeCommitMb": 1509,
+        "peakPrivateByPidMb": {
+          "3052": 22,
+          "4668": 27,
+          "8616": 3,
+          "9196": 25,
+          "11292": 17,
+          "12440": 8,
+          "12532": 1279,
+          "13384": 7,
+          "15416": 24,
+          "15584": 24,
+          "15676": 120,
+          "17236": 8,
+          "17392": 28,
+          "17804": 25,
+          "17984": 102
+        }
+      },
+      "wallMs": 528724,
+      "crashes": 0,
+      "memoryDuringRun": {
+        "samples": 359,
+        "peakWorkingSetMb": 1099,
+        "peakPrivateMb": 2132,
+        "minAvailablePhysicalMb": 34,
+        "minFreeCommitMb": 940,
+        "peakPrivateByPidMb": {
+          "3052": 21,
+          "4668": 27,
+          "8616": 3,
+          "9196": 25,
+          "11292": 15,
+          "12440": 8,
+          "12532": 1719,
+          "13384": 7,
+          "15416": 24,
+          "15584": 24,
+          "15676": 125,
+          "17236": 8,
+          "17392": 28,
+          "17804": 25,
+          "17984": 158
+        }
+      },
+      "memoryPressure": "yes: available physical RAM fell to 34 MB during the run; timings include paging",
+      "pageErrors": [],
+      "memoryAfterClose": {
+        "samples": 2,
+        "peakWorkingSetMb": 161,
+        "peakPrivateMb": 421,
+        "minAvailablePhysicalMb": 1278,
+        "minFreeCommitMb": 2876,
+        "peakPrivateByPidMb": {
+          "3052": 21,
+          "4668": 27,
+          "8616": 3,
+          "9196": 25,
+          "11292": 15,
+          "12440": 8,
+          "13384": 7,
+          "15416": 24,
+          "15584": 24,
+          "15676": 109,
+          "17236": 8,
+          "17392": 28,
+          "17804": 25,
+          "17984": 97
+        }
+      }
+    }
+  ],
+  "summary": [
+    {
+      "model": "onnx-community/whisper-base",
+      "overall": {
+        "samples": 2,
+        "scored": 0,
+        "failed": 0,
+        "emptyOutputs": 0,
+        "strict": {
+          "wer": {
+            "n": 0,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "hits": 0,
+            "rate": null
+          },
+          "cer": {
+            "n": 0,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "hits": 0,
+            "rate": null
+          }
+        },
+        "normalized": {
+          "wer": {
+            "n": 0,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "hits": 0,
+            "rate": null
+          },
+          "cer": {
+            "n": 0,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "hits": 0,
+            "rate": null
+          }
+        },
+        "diacriticOnlyErrors": 0,
+        "audioSeconds": 178.1,
+        "transcribeSeconds": 173.7,
+        "rtf": 0.975,
+        "meanCpuPercent": 24.5
+      },
+      "byCategory": {
+        "user-demo": {
+          "samples": 2,
+          "scored": 0,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 178.1,
+          "transcribeSeconds": 173.7,
+          "rtf": 0.975,
+          "meanCpuPercent": 24.5
+        }
+      },
+      "byLanguage": {
+        "en": {
+          "samples": 1,
+          "scored": 0,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 89.1,
+          "transcribeSeconds": 95.5,
+          "rtf": 1.072,
+          "meanCpuPercent": 24.6
+        },
+        "sr": {
+          "samples": 1,
+          "scored": 0,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 89,
+          "transcribeSeconds": 78.2,
+          "rtf": 0.879,
+          "meanCpuPercent": 24.4
+        }
+      },
+      "detection": {
+        "samples": 2,
+        "correct": 2,
+        "wrongLanguageDetected": 0,
+        "notDecided": 0,
+        "meanDetectMs": 0
+      }
+    },
+    {
+      "model": "onnx-community/whisper-small",
+      "overall": {
+        "samples": 2,
+        "scored": 0,
+        "failed": 0,
+        "emptyOutputs": 0,
+        "strict": {
+          "wer": {
+            "n": 0,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "hits": 0,
+            "rate": null
+          },
+          "cer": {
+            "n": 0,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "hits": 0,
+            "rate": null
+          }
+        },
+        "normalized": {
+          "wer": {
+            "n": 0,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "hits": 0,
+            "rate": null
+          },
+          "cer": {
+            "n": 0,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "hits": 0,
+            "rate": null
+          }
+        },
+        "diacriticOnlyErrors": 0,
+        "audioSeconds": 178.1,
+        "transcribeSeconds": 508.8,
+        "rtf": 2.857,
+        "meanCpuPercent": 23.1
+      },
+      "byCategory": {
+        "user-demo": {
+          "samples": 2,
+          "scored": 0,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 178.1,
+          "transcribeSeconds": 508.8,
+          "rtf": 2.857,
+          "meanCpuPercent": 23.1
+        }
+      },
+      "byLanguage": {
+        "en": {
+          "samples": 1,
+          "scored": 0,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 89.1,
+          "transcribeSeconds": 204.8,
+          "rtf": 2.299,
+          "meanCpuPercent": 24.8
+        },
+        "sr": {
+          "samples": 1,
+          "scored": 0,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 89,
+          "transcribeSeconds": 304,
+          "rtf": 3.416,
+          "meanCpuPercent": 21.3
+        }
+      },
+      "detection": {
+        "samples": 2,
+        "correct": 2,
+        "wrongLanguageDetected": 0,
+        "notDecided": 0,
+        "meanDetectMs": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+model,id,language,category,evaluation,audio_ms,transcribe_ms,rtf,cpu_percent,strict_wer,norm_wer,strict_cer,norm_cer,S,D,I,N,diacritic_only,used_language,hypothesis,error
+onnx-community/whisper-base,en-t01-david-r0,en,synthetic-clean,wer,4705,14620,3.107,19.8,0,0,0,0,0,0,0,8,0,en,"Hello, I am your AI assistant. Welcome aboard.",
+onnx-community/whisper-base,en-t14-zira-r0,en,very-short,wer,1340,9968,7.439,21.4,0,0,0,0,0,0,0,1,0,en,Yes.,
+onnx-community/whisper-base,ctl-silence-10s,,no-speech,detection-only,10000,6812,0.681,23.5,,,,,,,,,,en,you,

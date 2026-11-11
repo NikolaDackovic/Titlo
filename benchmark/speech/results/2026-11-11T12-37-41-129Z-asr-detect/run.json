@@ -1,0 +1,1259 @@
+{
+  "runId": "2026-11-11T12-37-41-129Z-asr-detect",
+  "date": "2026-11-11T12:37:42.780Z",
+  "hardwareAtStart": {
+    "cpu": "AMD Ryzen 3 3200U with Radeon Vega Mobile Gfx",
+    "physicalCores": 2,
+    "logicalCores": 4,
+    "gpu": "AMD Radeon(TM) Vega 3 Graphics (512 MB)",
+    "os": "Microsoft Windows 10 Home Single Language 10.0.19045 64-bit",
+    "availablePhysicalMb": 173,
+    "freeCommitMb": 2189,
+    "commitLimitMb": 14212,
+    "totalPhysicalMb": 3460
+  },
+  "node": "v22.19.0",
+  "edge": "Edg/157.0.4341.42",
+  "runtime": {
+    "transformersJs": "4.3.2",
+    "onnxruntimeWeb": "1.31.0-dev.20260914-8d85527a0",
+    "backend": "onnxruntime-web WASM (CPU) in a Web Worker, headless Edge"
+  },
+  "config": {
+    "languageMode": "explicit",
+    "detect": true,
+    "transcribe": false,
+    "decode": {
+      "return_timestamps": true,
+      "chunk_length_s": 30,
+      "stride_length_s": 5,
+      "task": "transcribe"
+    },
+    "runtime": {
+      "dtype": "q8",
+      "device": "wasm"
+    },
+    "blockTargetSec": 90,
+    "decoding": "greedy (Transformers.js 4.3 ignores num_beams)",
+    "minFreeCommitMb": 1500
+  },
+  "datasets": [
+    {
+      "name": "asr-synthetic-en",
+      "version": "1.0.0",
+      "file": "benchmark\\speech\\datasets\\asr-synthetic-en-v1.json",
+      "sha256": "4bd7eabf9d9f3c2ca0ba8f7c2059b34836334acfcf483dcf48f442e9f1f95399",
+      "samples": 49
+    },
+    {
+      "name": "local-demo",
+      "version": "1.0.0",
+      "file": "benchmark\\speech\\datasets\\local-demo.json",
+      "sha256": "8c6a7578db33468d4b4d5a1d78aa8e2c5a06fd1d0842fcb9e36430e0a9765a2f",
+      "samples": 2
+    }
+  ],
+  "selectedSamples": 27,
+  "command": "npx tsx benchmark/speech/scripts/run-asr-benchmark.ts --datasets asr-synthetic-en-v1,local-demo --only ctl-|t14-|t01-.*-r0|t05-.*-r0|t08-.*-r0|t12-.*-r0|noise10|music6|demo- --detect --no-transcribe --label detect",
+  "hardwareAtEnd": {
+    "availablePhysicalMb": 954,
+    "freeCommitMb": 2943,
+    "commitLimitMb": 14212,
+    "totalPhysicalMb": 3460
+  },
+  "models": [
+    {
+      "modelId": "onnx-community/whisper-base",
+      "modelInfo": {
+        "revision": "27a07b4b52b3a4c5886134bb4320e93e1a4bbc7c",
+        "totalBytes": 79700989,
+        "onnx": [
+          {
+            "path": "onnx/encoder_model_quantized.onnx",
+            "sha256": "5862993336bf33acd23736071aae2b32261d3b1b2f37780194460d4ef974dd46"
+          },
+          {
+            "path": "onnx/decoder_model_merged_quantized.onnx",
+            "sha256": "fa3ef9902734ce5ae6f9ef2bdb2ba9a6c4b5785b09f4f420ce036573dc9d090b"
+          }
+        ]
+      },
+      "memoryBefore": {
+        "availablePhysicalMb": 142,
+        "freeCommitMb": 2129,
+        "commitLimitMb": 14212,
+        "totalPhysicalMb": 3460
+      },
+      "page": {
+        "available": true,
+        "message": "Pronađen onnx-community/whisper-base.",
+        "crossOriginIsolated": false,
+        "hardwareConcurrency": 4
+      },
+      "loadMs": 22636,
+      "memoryAfterLoad": {
+        "samples": 10,
+        "peakWorkingSetMb": 141,
+        "peakPrivateMb": 62,
+        "minAvailablePhysicalMb": 27,
+        "minFreeCommitMb": 1046,
+        "peakPrivateByPidMb": {
+          "16088": 62
+        }
+      },
+      "wallMs": 239288,
+      "crashes": 0,
+      "memoryDuringRun": {
+        "samples": 182,
+        "peakWorkingSetMb": 86,
+        "peakPrivateMb": 64,
+        "minAvailablePhysicalMb": 15,
+        "minFreeCommitMb": 907,
+        "peakPrivateByPidMb": {
+          "15956": 8,
+          "16088": 61
+        }
+      },
+      "memoryPressure": "yes: available physical RAM fell to 15 MB during the run; timings include paging",
+      "pageErrors": [],
+      "memoryAfterClose": {
+        "samples": 2,
+        "peakWorkingSetMb": 40,
+        "peakPrivateMb": 59,
+        "minAvailablePhysicalMb": 936,
+        "minFreeCommitMb": 2210,
+        "peakPrivateByPidMb": {
+          "16088": 59
+        }
+      }
+    },
+    {
+      "modelId": "onnx-community/whisper-small",
+      "modelInfo": {
+        "revision": "36050c46d777d46dc4b5f43f6d90574fc38f8732",
+        "totalBytes": 251883411,
+        "onnx": [
+          {
+            "path": "onnx/encoder_model_quantized.onnx",
+            "sha256": "a43a83f3c5361cd591cfa7c36f14b43cf7cb22f47a415cc14a8d557be800fa92"
+          },
+          {
+            "path": "onnx/decoder_model_merged_quantized.onnx",
+            "sha256": "ec07c3cbb64172c39791e26ee870a65ac22b458c36722bfe2776b3dbf741e0c9"
+          }
+        ]
+      },
+      "memoryBefore": {
+        "availablePhysicalMb": 893,
+        "freeCommitMb": 2253,
+        "commitLimitMb": 14212,
+        "totalPhysicalMb": 3460
+      },
+      "page": {
+        "available": true,
+        "message": "Pronađen onnx-community/whisper-small.",
+        "crossOriginIsolated": false,
+        "hardwareConcurrency": 4
+      },
+      "loadMs": 18998,
+      "memoryAfterLoad": {
+        "samples": 14,
+        "peakWorkingSetMb": 41,
+        "peakPrivateMb": 59,
+        "minAvailablePhysicalMb": 96,
+        "minFreeCommitMb": 948,
+        "peakPrivateByPidMb": {
+          "16088": 59
+        }
+      },
+      "wallMs": 540336,
+      "crashes": 0,
+      "memoryDuringRun": {
+        "samples": 446,
+        "peakWorkingSetMb": 56,
+        "peakPrivateMb": 61,
+        "minAvailablePhysicalMb": 52,
+        "minFreeCommitMb": 337,
+        "peakPrivateByPidMb": {
+          "16088": 61
+        }
+      },
+      "memoryPressure": "yes: available physical RAM fell to 52 MB during the run; timings include paging",
+      "pageErrors": [],
+      "memoryAfterClose": {
+        "samples": 2,
+        "peakWorkingSetMb": 34,
+        "peakPrivateMb": 61,
+        "minAvailablePhysicalMb": 1061,
+        "minFreeCommitMb": 2215,
+        "peakPrivateByPidMb": {
+          "16088": 61
+        }
+      }
+    }
+  ],
+  "summary": [
+    {
+      "model": "onnx-community/whisper-base",
+      "overall": {
+        "samples": 27,
+        "scored": 0,
+        "failed": 0,
+        "emptyOutputs": 0,
+        "strict": {
+          "wer": {
+            "n": 0,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "hits": 0,
+            "rate": null
+          },
+          "cer": {
+            "n": 0,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "hits": 0,
+            "rate": null
+          }
+        },
+        "normalized": {
+          "wer": {
+            "n": 0,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "hits": 0,
+            "rate": null
+          },
+          "cer": {
+            "n": 0,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "hits": 0,
+            "rate": null
+          }
+        },
+        "diacriticOnlyErrors": 0,
+        "audioSeconds": 0,
+        "transcribeSeconds": 0,
+        "rtf": null,
+        "meanCpuPercent": 0
+      },
+      "byCategory": {
+        "synthetic-clean": {
+          "samples": 6,
+          "scored": 0,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 0,
+          "transcribeSeconds": 0,
+          "rtf": null,
+          "meanCpuPercent": 0
+        },
+        "names-terms": {
+          "samples": 2,
+          "scored": 0,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 0,
+          "transcribeSeconds": 0,
+          "rtf": null,
+          "meanCpuPercent": 0
+        },
+        "very-short": {
+          "samples": 2,
+          "scored": 0,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 0,
+          "transcribeSeconds": 0,
+          "rtf": null,
+          "meanCpuPercent": 0
+        },
+        "synthetic-noise": {
+          "samples": 6,
+          "scored": 0,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 0,
+          "transcribeSeconds": 0,
+          "rtf": null,
+          "meanCpuPercent": 0
+        },
+        "synthetic-music": {
+          "samples": 6,
+          "scored": 0,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 0,
+          "transcribeSeconds": 0,
+          "rtf": null,
+          "meanCpuPercent": 0
+        },
+        "no-speech": {
+          "samples": 3,
+          "scored": 0,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 0,
+          "transcribeSeconds": 0,
+          "rtf": null,
+          "meanCpuPercent": 0
+        },
+        "user-demo": {
+          "samples": 2,
+          "scored": 0,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 0,
+          "transcribeSeconds": 0,
+          "rtf": null,
+          "meanCpuPercent": 0
+        }
+      },
+      "byLanguage": {
+        "en": {
+          "samples": 23,
+          "scored": 0,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 0,
+          "transcribeSeconds": 0,
+          "rtf": null,
+          "meanCpuPercent": 0
+        },
+        "none": {
+          "samples": 3,
+          "scored": 0,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 0,
+          "transcribeSeconds": 0,
+          "rtf": null,
+          "meanCpuPercent": 0
+        },
+        "sr": {
+          "samples": 1,
+          "scored": 0,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 0,
+          "transcribeSeconds": 0,
+          "rtf": null,
+          "meanCpuPercent": 0
+        }
+      },
+      "detection": {
+        "samples": 27,
+        "correct": 25,
+        "wrongLanguageDetected": 0,
+        "notDecided": 2,
+        "meanDetectMs": 8165
+      }
+    },
+    {
+      "model": "onnx-community/whisper-small",
+      "overall": {
+        "samples": 27,
+        "scored": 0,
+        "failed": 0,
+        "emptyOutputs": 0,
+        "strict": {
+          "wer": {
+            "n": 0,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "hits": 0,
+            "rate": null
+          },
+          "cer": {
+            "n": 0,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "hits": 0,
+            "rate": null
+          }
+        },
+        "normalized": {
+          "wer": {
+            "n": 0,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "hits": 0,
+            "rate": null
+          },
+          "cer": {
+            "n": 0,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "hits": 0,
+            "rate": null
+          }
+        },
+        "diacriticOnlyErrors": 0,
+        "audioSeconds": 0,
+        "transcribeSeconds": 0,
+        "rtf": null,
+        "meanCpuPercent": 0
+      },
+      "byCategory": {
+        "synthetic-clean": {
+          "samples": 6,
+          "scored": 0,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 0,
+          "transcribeSeconds": 0,
+          "rtf": null,
+          "meanCpuPercent": 0
+        },
+        "names-terms": {
+          "samples": 2,
+          "scored": 0,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 0,
+          "transcribeSeconds": 0,
+          "rtf": null,
+          "meanCpuPercent": 0
+        },
+        "very-short": {
+          "samples": 2,
+          "scored": 0,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 0,
+          "transcribeSeconds": 0,
+          "rtf": null,
+          "meanCpuPercent": 0
+        },
+        "synthetic-noise": {
+          "samples": 6,
+          "scored": 0,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 0,
+          "transcribeSeconds": 0,
+          "rtf": null,
+          "meanCpuPercent": 0
+        },
+        "synthetic-music": {
+          "samples": 6,
+          "scored": 0,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 0,
+          "transcribeSeconds": 0,
+          "rtf": null,
+          "meanCpuPercent": 0
+        },
+        "no-speech": {
+          "samples": 3,
+          "scored": 0,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 0,
+          "transcribeSeconds": 0,
+          "rtf": null,
+          "meanCpuPercent": 0
+        },
+        "user-demo": {
+          "samples": 2,
+          "scored": 0,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 0,
+          "transcribeSeconds": 0,
+          "rtf": null,
+          "meanCpuPercent": 0
+        }
+      },
+      "byLanguage": {
+        "en": {
+          "samples": 23,
+          "scored": 0,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 0,
+          "transcribeSeconds": 0,
+          "rtf": null,
+          "meanCpuPercent": 0
+        },
+        "none": {
+          "samples": 3,
+          "scored": 0,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 0,
+          "transcribeSeconds": 0,
+          "rtf": null,
+          "meanCpuPercent": 0
+        },
+        "sr": {
+          "samples": 1,
+          "scored": 0,
+          "failed": 0,
+          "emptyOutputs": 0,
+          "strict": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "normalized": {
+            "wer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            },
+            "cer": {
+              "n": 0,
+              "substitutions": 0,
+              "deletions": 0,
+              "insertions": 0,
+              "hits": 0,
+              "rate": null
+            }
+          },
+          "diacriticOnlyErrors": 0,
+          "audioSeconds": 0,
+          "transcribeSeconds": 0,
+          "rtf": null,
+          "meanCpuPercent": 0
+        }
+      },
+      "detection": {
+        "samples": 27,
+        "correct": 25,
+        "wrongLanguageDetected": 0,
+        "notDecided": 2,
+        "meanDetectMs": 19310
+      }
+    }
+  ]
+}

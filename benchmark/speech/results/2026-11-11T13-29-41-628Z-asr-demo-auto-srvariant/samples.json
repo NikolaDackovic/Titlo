@@ -1,0 +1,118 @@
+[
+  {
+    "model": "onnx-community/whisper-base",
+    "id": "demo-srp-video",
+    "dataset": "local-demo@1.0.0",
+    "language": "sr",
+    "category": "user-demo",
+    "evaluation": "demo",
+    "expectedLanguage": "sr",
+    "audioMs": 88979,
+    "transcribeMs": 99353,
+    "rtf": 1.117,
+    "cpuPercent": 24.3,
+    "hypothesis": "Čau, ja sam to je aj asistenit, dobro došlo. Ovo je sajt hino krijezgu ksalona. Mušterija postavlja pitanje, a bot sam odgora. Sam zakazvo je termi. Posto 10, kad salo ne radi. Postvi da se za 5 minuta, bez programir. Evo kako? Uluge te se na vaš nalog, kopijerate jedno linjog koda i nalepiteno svoj sait. Rifreshujete stranicu i boć se pojevjiv. Prvo mu kažete što radite? Radno vreme, u svog je, ce je ne, čej stapitanje. Ili samo zalepite adresu svog sajt. Sam čega pročitati. Svi terminivam stižu ovdje. Vi ih samo potrotit. Cimbod zakarža termin, on sa utomaciju pisijo vškolendar. Obo vešteni stižana mail. Sve dam da na bezpultnom, bez kartic. Probate na svojm sajtu danas.",
+    "segments": 18,
+    "usedLanguage": "sr",
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.0020865874171211835,
+        "sh": 0.672608012774623,
+        "other": 0.12881693826486434,
+        "otherCode": "sq"
+      },
+      "candidates": [
+        {
+          "code": "hr",
+          "probability": 0.45937481607268954
+        },
+        {
+          "code": "bs",
+          "probability": 0.15147642250694848
+        },
+        {
+          "code": "sq",
+          "probability": 0.12881693826486434
+        },
+        {
+          "code": "sl",
+          "probability": 0.12237785452713162
+        },
+        {
+          "code": "sr",
+          "probability": 0.06175677419498504
+        }
+      ],
+      "noSpeechProb": 0.041195338384824726,
+      "windows": 3,
+      "speechSeconds": 72.18,
+      "status": "detected",
+      "language": "hr",
+      "probability": 0.672608012774623,
+      "variantIsHint": true,
+      "reason": "ok"
+    },
+    "detectMs": null,
+    "detectionError": null
+  },
+  {
+    "model": "onnx-community/whisper-small",
+    "id": "demo-srp-video",
+    "dataset": "local-demo@1.0.0",
+    "language": "sr",
+    "category": "user-demo",
+    "evaluation": "demo",
+    "expectedLanguage": "sr",
+    "audioMs": 88979,
+    "transcribeMs": 251134,
+    "rtf": 2.822,
+    "cpuPercent": 24.7,
+    "hypothesis": "Čao, ja sam to ja je asistent. Dobrdošo. Ovo je site i enokrijezgog salonu. Mušterija postavlja pitanje, a bot sam odgovor. Sam zakazuje termin. Posta deset, kad salo ne radi. postavite se za 5 minuta bez programmera. Evo kako? Ulogujete se na vaš nalog, kopjerate jednu liniju koda i nalepite na svoj site. Refresuje stranicu i bod se pojavlj. Prvom ukažete šta radete, radno vreme u svog je, cene, česta pitanja. Ili samo za ale pite adres u svog sajt. Sam će ga prođitati. Svi termini vam stižu ovdje. Vi ih samo potvrtit. Čim bot zakaže termin, on sa automatski upisuje u vaš kalendar. Obaleštenje stiža na mail. 7 dano bezpotno, bez kartice. Probajte na svom sajtu danas.",
+    "segments": 17,
+    "usedLanguage": "sr",
+    "error": null,
+    "score": null,
+    "detection": {
+      "groups": {
+        "en": 0.009627945179350974,
+        "sh": 0.8799608491685857,
+        "other": 0.08580297478549818,
+        "otherCode": "sl"
+      },
+      "candidates": [
+        {
+          "code": "hr",
+          "probability": 0.5600707249618644
+        },
+        {
+          "code": "bs",
+          "probability": 0.232077109433414
+        },
+        {
+          "code": "sr",
+          "probability": 0.08781301477330733
+        },
+        {
+          "code": "sl",
+          "probability": 0.08580297478549818
+        },
+        {
+          "code": "en",
+          "probability": 0.009627945179350974
+        }
+      ],
+      "noSpeechProb": 0.07514516230089067,
+      "windows": 3,
+      "speechSeconds": 72.18,
+      "status": "detected",
+      "language": "hr",
+      "probability": 0.8799608491685857,
+      "variantIsHint": true,
+      "reason": "ok"
+    },
+    "detectMs": null,
+    "detectionError": null
+  }
+]
