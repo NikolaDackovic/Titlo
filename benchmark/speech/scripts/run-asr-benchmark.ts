@@ -10,6 +10,12 @@
  *   npx tsx benchmark/speech/scripts/run-asr-benchmark.ts                       # base + small, synthetic EN
  *   npx tsx benchmark/speech/scripts/run-asr-benchmark.ts --detect              # + language detection per sample
  *   npx tsx benchmark/speech/scripts/run-asr-benchmark.ts --datasets local-demo --detect --models onnx-community/whisper-small
+ *   npx tsx benchmark/speech/scripts/run-asr-benchmark.ts --datasets real-world --detect --qc --label real-world   # real recordings
+ *
+ * Options added for the real-world benchmark:
+ *   --qc                 run the app's transcription QC on each result (warnings + review template)
+ *   --dataset-file <p>   an extra dataset JSON by path (e.g. a scratch dataset for a pipeline check)
+ *   --results-dir <p>    write the run folder somewhere else (default benchmark/speech/results)
  *
  * Every run writes a NEW folder benchmark/speech/results/<run-id>/ (never overwritten).
  */
@@ -21,16 +27,20 @@ import os from 'node:os'
 import path from 'node:path'
 import { pathToFileURL } from 'node:url'
 import { resolveModelsDir } from '../../../build/modelsDir'
-import { aggregate, scoreSample, type ErrorCounts, type SampleScore } from '../../../src/benchmark/speech/metrics'
+import { aggregate, renderDiff, scoreSample, wordAlignment, type ErrorCounts, type SampleScore } from '../../../src/benchmark/speech/metrics'
 import type { LanguageDetection } from '../../../src/media/languageDetection'
 import { BLOCK_TARGET_SEC, WHISPER_DECODE_OPTIONS, WHISPER_RUNTIME } from '../../../src/media/whisperConfig'
+import { missedCandidates, renderReport, reviewTemplateRows, toCsv, type QcIssueRecord, type SegmentRecord } from './lib/realWorld'
 import type { SpeechDataset, SpeechSample } from './lib/types'
 
 // ---------- arguments ----------
 const argv = process.argv.slice(2)
 const arg = (name: string, fallback: string) => (argv.includes(`--${name}`) ? argv[argv.indexOf(`--${name}`) + 1] : fallback)
 const flag = (name: string) => argv.includes(`--${name}`)
-const datasets = arg('datasets', 'asr-synthetic-en-v1').split(',')
+const datasetFiles = arg('dataset-file', '') ? arg('dataset-file', '').split(',') : []
+const datasets = arg('datasets', datasetFiles.length ? '' : 'asr-synthetic-en-v1').split(',').filter(Boolean)
+/** Run the app's transcription QC on each result (real-world benchmark). */
+const qc = flag('qc')
 const models = arg('models', 'onnx-community/whisper-base,onnx-community/whisper-small').split(',')
 const languageMode = arg('language', 'explicit') as 'explicit' | 'auto'
 const detect = flag('detect')
@@ -46,7 +56,7 @@ const EDGE = arg('edge', 'C:/Program Files (x86)/Microsoft/Edge/Application/msed
 
 const root = path.resolve('benchmark/speech')
 const runId = `${new Date().toISOString().replace(/[:.]/g, '-')}-asr-${label}`
-const outDir = path.join(root, 'results', runId)
+const outDir = path.join(path.resolve(arg('results-dir', path.join(root, 'results'))), runId)
 if (existsSync(outDir)) throw new Error(`${outDir} exists; results are never overwritten`)
 
 // ---------- helpers ----------
@@ -149,13 +159,14 @@ const modelInfo = (modelId: string) => {
 const pkgVersion = (name: string) => JSON.parse(readFileSync(path.resolve('node_modules', name, 'package.json'), 'utf8')).version as string
 
 // ---------- dataset ----------
-const loaded = datasets.map((name) => {
-  const file = path.join(root, 'datasets', `${name}.json`)
+const loaded = [...datasets.map((name) => path.join(root, 'datasets', `${name}.json`)), ...datasetFiles.map((f) => path.resolve(f))].map((file) => {
+  if (!existsSync(file)) throw new Error(`Dataset not found: ${file}${file.endsWith('real-world.json') ? ' (add a recording first: npm run benchmark:speech:add -- --help in docs/REAL_WORLD_SPEECH_BENCHMARK.md)' : ''}`)
   return { file, sha256: sha256(file), data: JSON.parse(readFileSync(file, 'utf8')) as SpeechDataset }
 })
 let samples: Array<SpeechSample & { dataset: string }> = loaded.flatMap((d) => d.data.samples.map((s) => ({ ...s, dataset: `${d.data.name}@${d.data.version}` })))
 if (only) samples = samples.filter((s) => new RegExp(only).test(s.id))
 if (limit) samples = samples.slice(0, limit)
+if (!samples.length) throw new Error('No samples selected: nothing to run (no results are invented).')
 for (const s of samples) {
   const file = path.resolve(s.audio)
   if (!existsSync(file)) throw new Error(`Missing audio: ${s.audio}`)
@@ -165,6 +176,19 @@ for (const s of samples) {
 // ---------- run ----------
 interface SampleResult {
   model: string
+  modelRevision?: string | null
+  audioSha256?: string
+  /** Real human recording (vs synthetic TTS). */
+  realWorld?: boolean
+  contentType?: string
+  qualityNote?: string
+  /** The confirmed reference this result was scored against (copied, so the run stays self-contained). */
+  reference?: string | null
+  diff?: string | null
+  strictDiff?: string | null
+  segmentList?: SegmentRecord[] | null
+  qcIssues?: QcIssueRecord[] | null
+  qcMissedCandidates?: ReturnType<typeof missedCandidates>
   id: string
   dataset: string
   language: string | null
@@ -195,7 +219,7 @@ const env = {
   node: process.version,
   edge: null as string | null,
   runtime: { transformersJs: pkgVersion('@huggingface/transformers'), onnxruntimeWeb: pkgVersion('onnxruntime-web'), backend: 'onnxruntime-web WASM (CPU) in a Web Worker, headless Edge' },
-  config: { languageMode, shVariantMode, detect, transcribe, decode: WHISPER_DECODE_OPTIONS, runtime: WHISPER_RUNTIME, blockTargetSec: BLOCK_TARGET_SEC, decoding: 'greedy (Transformers.js 4.3 ignores num_beams)', minFreeCommitMb },
+  config: { languageMode, shVariantMode, detect, transcribe, qc, decode: WHISPER_DECODE_OPTIONS, runtime: WHISPER_RUNTIME, blockTargetSec: BLOCK_TARGET_SEC, decoding: 'greedy (Transformers.js 4.3 ignores num_beams)', minFreeCommitMb },
   datasets: loaded.map((d) => ({ name: d.data.name, version: d.data.version, file: path.relative(process.cwd(), d.file), sha256: d.sha256, samples: d.data.samples.length })),
   selectedSamples: samples.length,
   command: `npx tsx benchmark/speech/scripts/run-asr-benchmark.ts ${argv.join(' ')}`.trim(),
@@ -316,7 +340,7 @@ for (const modelId of models) {
     let out: Record<string, unknown>
     try {
       out = await page.evaluate(
-      async (b64: string, name: string, opts: { modelId: string; language: string; shVariant?: string; detect: boolean; transcribe: boolean }) => {
+      async (b64: string, name: string, opts: { modelId: string; language: string; shVariant?: string; detect: boolean; transcribe: boolean; qc: boolean }) => {
         const engine = (globalThis as unknown as { __asr: any }).__asr // eslint-disable-line @typescript-eslint/no-explicit-any
         const bin = Uint8Array.from(atob(b64), (c) => c.charCodeAt(0))
         const file = new File([bin], name)
@@ -336,6 +360,27 @@ for (const modelId of models) {
             const res = await engine.transcribe(file, { modelId: opts.modelId, language: opts.language, shVariant: opts.shVariant }, new AbortController().signal, () => {})
             r.text = res.segments.map((x: { text: string }) => x.text.replace(/\n/g, ' ')).join(' ')
             r.segments = res.segments.length
+            r.segmentList = res.segments.map((x: { start: number; end: number; text: string }) => ({ start: x.start, end: x.end, text: x.text.replace(/\n/g, ' ') }))
+            if (opts.qc) {
+              // The app's own QC (same thresholds as the Studio), on the untouched Whisper output.
+              const qcPath = '/src/qc/checks/transcript.ts'
+              const qcModule = (await import(/* @vite-ignore */ qcPath)) as typeof import('../../../src/qc/checks/transcript')
+              const segs = res.segments.map((x: { start: number; end: number; text: string }, i: number) => ({ id: `seg-${i}`, start: x.start, end: x.end, source: x.text, translations: {}, sourceOrigin: 'whisper' as const, sourceStatus: 'unreviewed' as const }))
+              r.qcIssues = qcModule.checkTranscript({ segments: segs, audio: res.activity }).map((i) => {
+                const index = i.segmentId ? Number(i.segmentId.slice(4)) : null
+                const gap = Boolean(i.range)
+                return {
+                  id: i.id,
+                  check: i.check,
+                  severity: i.severity,
+                  segmentIndex: gap ? null : index,
+                  startMs: gap ? i.range!.startMs : index !== null ? segs[index].start : null,
+                  endMs: gap ? i.range!.endMs : index !== null ? segs[index].end : null,
+                  title: i.title,
+                  message: i.message,
+                }
+              })
+            }
             r.durationMs = res.durationMs
             r.usedLanguage = res.language
             if (res.detection) r.detection = res.detection
@@ -350,13 +395,13 @@ for (const modelId of models) {
       },
       bytes,
       path.basename(s.audio),
-      { modelId, language, shVariant: shVariantMode === 'sample' && s.language && s.language !== 'en' ? s.language : undefined, detect, transcribe },
+      { modelId, language, shVariant: shVariantMode === 'sample' && s.language && s.language !== 'en' ? s.language : undefined, detect, transcribe, qc },
     )
     } catch (error) {
       // Renderer crash (often: out of memory) or lost browser. Record it, reopen, continue.
       crashes += 1
       const message = `Page crashed during this sample: ${(error as Error).message}`
-      results.push({ model: modelId, id: s.id, dataset: s.dataset, language: s.language, category: s.category, evaluation: s.evaluation, expectedLanguage: s.expectedLanguage, audioMs: s.durationMs, transcribeMs: null, rtf: null, cpuPercent: null, hypothesis: null, segments: null, usedLanguage: null, error: message, score: null, detection: null, detectMs: null, detectionError: detect ? message : null })
+      results.push({ model: modelId, modelRevision: info.revision, audioSha256: s.sha256, realWorld: Boolean(s.realWorld), reference: s.reference, id: s.id, dataset: s.dataset, language: s.language, category: s.category, evaluation: s.evaluation, expectedLanguage: s.expectedLanguage, audioMs: s.durationMs ?? 0, transcribeMs: null, rtf: null, cpuPercent: null, hypothesis: null, segments: null, usedLanguage: null, error: message, score: null, detection: null, detectMs: null, detectionError: detect ? message : null })
       appendFileSync(partialFile, `${JSON.stringify(results.at(-1))}\n`)
       console.log(`  ${s.id.padEnd(32)} CRASH ${message}`)
       if (!browser.connected) {
@@ -371,12 +416,27 @@ for (const modelId of models) {
     }
     const wall = Date.now() - wall0
     const cpuAfter = (await processInfo()).reduce((sum, p) => sum + p.cpuTime, 0)
-    const audioMs = (out.durationMs as number | undefined) ?? s.durationMs
+    const audioMs = (out.durationMs as number | undefined) ?? s.durationMs ?? 0
     const hypothesis = (out.text as string | undefined) ?? null
-    const score = s.evaluation === 'wer' && s.reference !== null && hypothesis !== null ? scoreSample(s.reference, hypothesis) : null
+    // WER only against a reference a person typed/checked (or exact by construction for TTS).
+    const trusted = s.referenceStatus === 'human-verified' || s.referenceStatus === 'exact-by-construction'
+    const score = s.evaluation === 'wer' && trusted && s.reference !== null && hypothesis !== null ? scoreSample(s.reference, hypothesis) : null
+    const segmentList = (out.segmentList as SegmentRecord[] | undefined) ?? null
+    const qcIssues = (out.qcIssues as QcIssueRecord[] | undefined) ?? null
     const transcribeMs = (out.transcribeMs as number | undefined) ?? null
     const result: SampleResult = {
       model: modelId,
+      modelRevision: info.revision,
+      audioSha256: s.sha256,
+      realWorld: Boolean(s.realWorld),
+      contentType: s.contentType,
+      qualityNote: s.qualityNote,
+      reference: s.reference,
+      diff: score ? renderDiff(wordAlignment(s.reference!, hypothesis!)) : null,
+      strictDiff: score ? renderDiff(wordAlignment(s.reference!, hypothesis!, 'strict')) : null,
+      segmentList,
+      qcIssues,
+      qcMissedCandidates: score && segmentList && qcIssues ? missedCandidates(segmentList, s.reference!, qcIssues) : null,
       id: s.id,
       dataset: s.dataset,
       language: s.language,
@@ -501,6 +561,23 @@ if (results.some((r) => r.detection || r.detectionError))
       }),
     ]),
   )
+// Human-readable report (aggregates always state samples and audio duration) and the QC review template.
+writeFileSync(
+  path.join(outDir, 'report.md'),
+  renderReport(
+    {
+      runId,
+      date: env.date,
+      command: env.command,
+      datasets: env.datasets.map((d) => ({ name: d.name, version: d.version, sha256: d.sha256, samples: d.samples })),
+      models: modelRuns.map((m) => ({ modelId: String(m.modelId), revision: (m.modelInfo as { revision?: string } | null)?.revision ?? null, skipped: m.skipped as string | undefined, memoryPressure: m.memoryPressure as string | undefined })),
+      config: env.config,
+      hardware: env.hardwareAtStart,
+    },
+    results,
+  ),
+)
+if (qc) writeFileSync(path.join(outDir, 'qc-review.csv'), `\uFEFF${toCsv(reviewTemplateRows(runId, results))}`)
 console.log(`\nResults: ${path.relative(process.cwd(), outDir)}`)
 for (const s of summary) {
   const o = s.overall

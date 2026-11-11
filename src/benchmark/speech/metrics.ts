@@ -143,3 +143,19 @@ export function aggregate(counts: ErrorCounts[]): ErrorCounts {
   const insertions = sum('insertions')
   return { n, substitutions, deletions, insertions, hits: sum('hits'), rate: n ? (substitutions + deletions + insertions) / n : null }
 }
+
+/** Full word alignment (hits included) in the strict or normalized view, for a readable diff. */
+export function wordAlignment(reference: string, hypothesis: string, view: 'strict' | 'normalized' = 'normalized'): AlignmentStep[] {
+  const prep = view === 'strict' ? strictText : normalizedText
+  return align(words(prep(reference)), words(prep(hypothesis)))
+}
+
+/**
+ * Plain-text diff: correct words as they are, `[ref→hyp]` substitution, `[-ref-]` deletion
+ * (said, not recognised), `[+hyp+]` insertion (recognised, not said).
+ */
+export function renderDiff(steps: AlignmentStep[]): string {
+  return steps
+    .map((s) => (s.op === 'ok' ? s.ref : s.op === 'sub' ? `[${s.ref}→${s.hyp}]` : s.op === 'del' ? `[-${s.ref}-]` : `[+${s.hyp}+]`))
+    .join(' ')
+}

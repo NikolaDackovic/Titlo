@@ -129,7 +129,7 @@ const dataset: SpeechDataset = {
 const out = path.join(root, 'datasets/asr-synthetic-en-v1.json')
 if (existsSync(out)) throw new Error(`${rel(out)} already exists. Datasets are versioned: bump the version instead of overwriting.`)
 writeFileSync(out, JSON.stringify(dataset, null, 2))
-console.log(`${rel(out)}: ${samples.length} samples, ${(samples.reduce((s, x) => s + x.durationMs, 0) / 1000).toFixed(1)} s of audio`)
+console.log(`${rel(out)}: ${samples.length} samples, ${(samples.reduce((s, x) => s + (x.durationMs ?? 0), 0) / 1000).toFixed(1)} s of audio`)
 
 // 4. The user's own recordings (local paths, no reference transcript): demonstration only.
 const demo: SpeechSample[] = []

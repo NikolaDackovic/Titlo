@@ -27,7 +27,7 @@ npm run preview      # http://localhost:4173 (servira i lokalni models/ folder)
 Ostale komande:
 
 ```bash
-npm test                  # 242 testa (unit + integration + pokrivenost srpskog prevoda UI-ja + performanse sa 2.000 titlova)
+npm test                  # 256 testova (unit + integration + pokrivenost srpskog prevoda UI-ja + performanse sa 2.000 titlova)
 npm run test:unit         # brzi unit testovi
 npm run test:integration  # SQLite perzistencija
 npm run lint              # oxlint
@@ -84,6 +84,7 @@ Prečice su navedene u Podešavanja → Prečice na tastaturi (Ctrl+S, Ctrl+Z/Y,
 | Transkripcija govora (Whisper, lokalno u browseru) | **Implemented — Experimental** (Requires external model) | Web Audio dekodiranje → mono 16 kHz → blokovi ~90 s sečeni na tišini → Whisper u Web Worker-u (WASM) → titlovi sa vremenima, ćirilica → latinica za sr/hr/bs. Sumnjivi redovi se više ne brišu tiho, već se označavaju za pregled. Otkazivanje odmah prekida worker. Ograničenje browser verzije: fajl do 700 MB i kodek koji browser ume da dekodira. Tačnost je merena samo na sintetičkom engleskom (vidi `docs/ASR_MODEL_COMPARISON.md`); za sr/hr/bs WER još nema (nema snimaka sa referencom). |
 | Automatsko prepoznavanje jezika govora | **Implemented** | Prava detekcija (Whisper jezički tokeni + no-speech), grupa sr/hr/bs, ručni izbor kad nije pouzdano. Provereno na 27 uzoraka × 2 modela (engleski, tišina, šum, muzika, vaši videi). Hrvatski i bosanski govor nisu testirani (nema snimaka). |
 | Speech benchmark (WER/CER strogo i normalizovano, RTF, RAM, CPU, detekcija) | **Implemented** | Radi u istom runtime-u kao aplikacija. Dataset v1: 49 sintetičkih engleskih uzoraka (Windows TTS). Vidi `benchmark/speech/README.md`. |
+| Real-world speech benchmark (stvarni snimci sr/hr/bs, potvrđena referenca, diff, naveden/prepoznat jezik, QC + ručna ocena) | **Implemented — nije izvršen** | Infrastruktura spremna i proverena; još nema nijednog stvarnog snimka, pa nema rezultata. Vidi `docs/REAL_WORLD_SPEECH_BENCHMARK.md`. |
 | FFmpeg + whisper.cpp (desktop, dugi filmovi, svi kodeci) | Planned (Faza G) | Interfejsi `MediaProcessor`/`TranscriptionEngine` su spremni. |
 | Benchmark v2 (100 rečenica, 10×10 kategorija, stvarni model, latencija p50/p95, RAM/CPU, chrF, obrasci za ljudsku ocenu) | **Implemented** | Pokrenut na stvarnom modelu (`benchmark/results/`). Reference su nacrti; ljudska ocena nije urađena. |
 | Interfejs na srpskom (latinica) + engleski | **Implemented** | Podrazumevano srpski; SR/EN prekidač u bočnoj traci i u Podešavanjima. Prevedene su i QC poruke, napomene pri uvozu, razlozi lokalizacije i poruke modela. Test proverava da svaki tekst ima srpski prevod i iste `{promenljive}`. Hrvatski/bosanski UI: Planned. |

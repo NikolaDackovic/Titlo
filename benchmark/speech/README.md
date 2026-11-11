@@ -10,8 +10,13 @@ benchmark/speech/
   audio/controls/                      tišina, samo šum, samo „muzika“ (bez govora)
   datasets/asr-synthetic-en-v1.json    dataset v1.0.0 (49 uzoraka, 231 s)
   datasets/local-demo.json             snimci korisnika (bez reference → samo demonstracija)
+  datasets/real-world.json             STVARNI ljudski snimci sr/hr/bs sa proverenom referencom (pravi ga add-real-sample)
+  datasets/history/                    prethodne verzije real-world dataseta
+  audio/real-world/                    lokalne kopije stvarnih snimaka (nije u git-u)
   scripts/tts-en.ps1                   generisanje TTS uzoraka (System.Speech, offline)
   scripts/build-datasets.ts            pravljenje dataseta (odbija da prepiše postojeći)
+  scripts/add-real-sample.ts           dodavanje stvarnog snimka (validacija, zaštita od Whisper reference)
+  scripts/qc-review-summary.ts         sažetak ručne ocene QC upozorenja
   scripts/run-asr-benchmark.ts         runner
   results/<run-id>/                    rezultati; nikad se ne prepisuju
 ```
@@ -43,7 +48,15 @@ npx tsx benchmark/speech/scripts/run-asr-benchmark.ts --datasets asr-synthetic-e
 npx tsx benchmark/speech/scripts/run-asr-benchmark.ts --datasets local-demo --label demo
 ```
 
-Opcije: `--models a,b`, `--language explicit|auto`, `--detect`, `--no-transcribe`, `--only <regex>`, `--limit N`,
+Stvarni snimci (srpski, hrvatski, bosanski): `docs/REAL_WORLD_SPEECH_BENCHMARK.md`.
+
+```powershell
+npm run benchmark:speech:add -- --id sr-podcast-01 --language sr --audio <fajl> --reference-file <tekst.txt> --quality "…" --content-type podcast --license "…" --confirm-reference --copy
+npm run benchmark:speech:real
+npm run benchmark:speech:qc-summary -- <run-id>
+```
+
+Opcije: `--qc` (QC upozorenja + šablon za ocenu), `--dataset-file <putanja>`, `--results-dir <putanja>`, `--models a,b`, `--language explicit|auto`, `--detect`, `--no-transcribe`, `--only <regex>`, `--limit N`,
 `--label <ime>`, `--min-free-commit-mb N` (podrazumevano 1500), `--port N`, `--app <url>`.
 Ako `puppeteer-core` nije u projektu: `PUPPETEER_CORE_DIR=<folder koji sadrži node_modules/puppeteer-core>`.
 

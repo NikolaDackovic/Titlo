@@ -22,7 +22,10 @@
     "model:install:sh-en": "tsx scripts/install-model.ts --model sh-en",
     "model:smoke:sh-en": "tsx scripts/smoke-sh-en.ts",
     "benchmark:speech": "tsx benchmark/speech/scripts/run-asr-benchmark.ts",
-    "benchmark:speech:build": "tsx benchmark/speech/scripts/build-datasets.ts"
+    "benchmark:speech:build": "tsx benchmark/speech/scripts/build-datasets.ts",
+    "benchmark:speech:add": "tsx benchmark/speech/scripts/add-real-sample.ts",
+    "benchmark:speech:real": "tsx benchmark/speech/scripts/run-asr-benchmark.ts --datasets real-world --detect --qc --label real-world",
+    "benchmark:speech:qc-summary": "tsx benchmark/speech/scripts/qc-review-summary.ts"
   },
   "dependencies": {
     "@huggingface/transformers": "4.3.2",
